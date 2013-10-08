@@ -1,0 +1,258 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="CollisionScene.html">CollisionScene</a></div>
+				<div class="class_entry"><a href="CollisionSceneEntity.html">CollisionSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsScene.html">PhysicsScene</a></div>
+				<div class="class_entry"><a href="PhysicsHingeConstraint.html">PhysicsHingeConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEvent.html">PhysicsSceneEvent</a></div>
+				<div class="class_entry"><a href="PhysicsGenericConstraint.html">PhysicsGenericConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEntity.html">PhysicsSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsCharacter.html">PhysicsCharacter</a></div>
+				<div class="class_entry"><a href="PhysicsVehicle.html">PhysicsVehicle</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">PhysicsSceneEntity <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Physics3D/CollisionSceneEntity.html">CollisionSceneEntity</a></span></div>
+					<div class="class_desc"> A wrapper around SceneEntity that provides physics information.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_BOX <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Box shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_TERRAIN <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Terrain shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_SPHERE <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Sphere shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_MESH <span class="static_value">= 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Mesh shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.CHARACTER_CONTROLLER <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Character controller shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_CAPSULE <span class="static_value">= 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Capsule shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_PLANE <span class="static_value">= 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Plane shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_CONE <span class="static_value">= 7</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Cone shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsSceneEntity.SHAPE_CYLINDER <span class="static_value">= 8</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Cylinder shape</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">enabled</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">rigidBody</div>
+								<div class="class_property_type">btRigidBody</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">PhysicsSceneEntity ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ,  <span class="inline_type">Number</span> <span class="inline_param">mass</span> ,  <span class="inline_type">Number</span> <span class="inline_param">friction</span> ,  <span class="inline_type">Number</span> <span class="inline_param">restitution</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">compoundChildren</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mass</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">friction</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">restitution</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">compoundChildren</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getSceneEntity () </div>
+								<div class="class_method_type">SceneEntity</div>
+								<div class="class_method_desc"> @name Physics scene entity  Public methods</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setFriction ( <span class="inline_type">Number</span> <span class="inline_param">friction</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">friction</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getType () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setSpin ( <span class="inline_type">Vector3</span> <span class="inline_param">spin</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">spin</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setMass ( <span class="inline_type">Number</span> <span class="inline_param">mass</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mass</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVelocity () </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getSpin () </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setRotation ( <span class="inline_type">Quaternion</span> <span class="inline_param">quat</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">quat</div>
+									<div class="class_method_param_type">Quaternion</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocity ( <span class="inline_type">Vector3</span> <span class="inline_param">velocity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">velocity</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">warpTo ( <span class="inline_type">Vector3</span> <span class="inline_param">position</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">resetRotation</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">position</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">resetRotation</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyImpulse ( <span class="inline_type">Vector3</span> <span class="inline_param">direction</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">point</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">direction</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">point</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

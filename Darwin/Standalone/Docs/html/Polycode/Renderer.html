@@ -1,0 +1,1669 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="BezierCurve.html">BezierCurve</a></div>
+				<div class="class_entry"><a href="Bone.html">Bone</a></div>
+				<div class="class_entry"><a href="Camera.html">Camera</a></div>
+				<div class="class_entry"><a href="Color.html">Color</a></div>
+				<div class="class_entry"><a href="Config.html">Config</a></div>
+				<div class="class_entry"><a href="PolycodeViewBase.html">PolycodeViewBase</a></div>
+				<div class="class_entry"><a href="Core.html">Core</a></div>
+				<div class="class_entry"><a href="CoreInput.html">CoreInput</a></div>
+				<div class="class_entry"><a href="CoreServices.html">CoreServices</a></div>
+				<div class="class_entry"><a href="Cubemap.html">Cubemap</a></div>
+				<div class="class_entry"><a href="Data.html">Data</a></div>
+				<div class="class_entry"><a href="Rotation.html">Rotation</a></div>
+				<div class="class_entry"><a href="Entity.html">Entity</a></div>
+				<div class="class_entry"><a href="Event.html">Event</a></div>
+				<div class="class_entry"><a href="EventDispatcher.html">EventDispatcher</a></div>
+				<div class="class_entry"><a href="EventHandler.html">EventHandler</a></div>
+				<div class="class_entry"><a href="FixedShader.html">FixedShader</a></div>
+				<div class="class_entry"><a href="FixedShaderBinding.html">FixedShaderBinding</a></div>
+				<div class="class_entry"><a href="Font.html">Font</a></div>
+				<div class="class_entry"><a href="FontManager.html">FontManager</a></div>
+				<div class="class_entry"><a href="Image.html">Image</a></div>
+				<div class="class_entry"><a href="InputEvent.html">InputEvent</a></div>
+				<div class="class_entry"><a href="GlyphData.html">GlyphData</a></div>
+				<div class="class_entry"><a href="Label.html">Label</a></div>
+				<div class="class_entry"><a href="Material.html">Material</a></div>
+				<div class="class_entry"><a href="MaterialManager.html">MaterialManager</a></div>
+				<div class="class_entry"><a href="Matrix4.html">Matrix4</a></div>
+				<div class="class_entry"><a href="Mesh.html">Mesh</a></div>
+				<div class="class_entry"><a href="VertexBuffer.html">VertexBuffer</a></div>
+				<div class="class_entry"><a href="PolycodeModule.html">PolycodeModule</a></div>
+				<div class="class_entry"><a href="ObjectEntry.html">ObjectEntry</a></div>
+				<div class="class_entry"><a href="BinaryObjectReader.html">BinaryObjectReader</a></div>
+				<div class="class_entry"><a href="BinaryObjectWriter.html">BinaryObjectWriter</a></div>
+				<div class="class_entry"><a href="Particle.html">Particle</a></div>
+				<div class="class_entry"><a href="ScreenParticleEmitter.html">ScreenParticleEmitter</a></div>
+				<div class="class_entry"><a href="SceneParticleEmitter.html">SceneParticleEmitter</a></div>
+				<div class="class_entry"><a href="ParticleEmitter.html">ParticleEmitter</a></div>
+				<div class="class_entry"><a href="Perlin.html">Perlin</a></div>
+				<div class="class_entry"><a href="Polygon.html">Polygon</a></div>
+				<div class="class_entry"><a href="Quaternion.html">Quaternion</a></div>
+				<div class="class_entry"><a href="QuaternionCurve.html">QuaternionCurve</a></div>
+				<div class="class_entry"><a href="Rectangle.html">Rectangle</a></div>
+				<div class="class_entry"><a href="Renderer.html">Renderer</a></div>
+				<div class="class_entry"><a href="Resource.html">Resource</a></div>
+				<div class="class_entry"><a href="ResourceManager.html">ResourceManager</a></div>
+				<div class="class_entry"><a href="Scene.html">Scene</a></div>
+				<div class="class_entry"><a href="SceneEntity.html">SceneEntity</a></div>
+				<div class="class_entry"><a href="SceneLabel.html">SceneLabel</a></div>
+				<div class="class_entry"><a href="SceneLight.html">SceneLight</a></div>
+				<div class="class_entry"><a href="SceneLine.html">SceneLine</a></div>
+				<div class="class_entry"><a href="SceneManager.html">SceneManager</a></div>
+				<div class="class_entry"><a href="SceneMesh.html">SceneMesh</a></div>
+				<div class="class_entry"><a href="ScenePrimitive.html">ScenePrimitive</a></div>
+				<div class="class_entry"><a href="SceneRenderTexture.html">SceneRenderTexture</a></div>
+				<div class="class_entry"><a href="SceneSound.html">SceneSound</a></div>
+				<div class="class_entry"><a href="SceneSoundListener.html">SceneSoundListener</a></div>
+				<div class="class_entry"><a href="Screen.html">Screen</a></div>
+				<div class="class_entry"><a href="ScreenEntity.html">ScreenEntity</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstance.html">ScreenEntityInstance</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstanceResourceEntry.html">ScreenEntityInstanceResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenEvent.html">ScreenEvent</a></div>
+				<div class="class_entry"><a href="ScreenImage.html">ScreenImage</a></div>
+				<div class="class_entry"><a href="ScreenLabel.html">ScreenLabel</a></div>
+				<div class="class_entry"><a href="ScreenLine.html">ScreenLine</a></div>
+				<div class="class_entry"><a href="ScreenManager.html">ScreenManager</a></div>
+				<div class="class_entry"><a href="ScreenMesh.html">ScreenMesh</a></div>
+				<div class="class_entry"><a href="ScreenShape.html">ScreenShape</a></div>
+				<div class="class_entry"><a href="ScreenSoundListener.html">ScreenSoundListener</a></div>
+				<div class="class_entry"><a href="ScreenSound.html">ScreenSound</a></div>
+				<div class="class_entry"><a href="ScreenSpriteResourceEntry.html">ScreenSpriteResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenSprite.html">ScreenSprite</a></div>
+				<div class="class_entry"><a href="Shader.html">Shader</a></div>
+				<div class="class_entry"><a href="LocalShaderParam.html">LocalShaderParam</a></div>
+				<div class="class_entry"><a href="ShaderProgram.html">ShaderProgram</a></div>
+				<div class="class_entry"><a href="ShaderBinding.html">ShaderBinding</a></div>
+				<div class="class_entry"><a href="SkeletonAnimation.html">SkeletonAnimation</a></div>
+				<div class="class_entry"><a href="Skeleton.html">Skeleton</a></div>
+				<div class="class_entry"><a href="BoneTrack.html">BoneTrack</a></div>
+				<div class="class_entry"><a href="Sound.html">Sound</a></div>
+				<div class="class_entry"><a href="SoundManager.html">SoundManager</a></div>
+				<div class="class_entry"><a href="String.html">String</a></div>
+				<div class="class_entry"><a href="Texture.html">Texture</a></div>
+				<div class="class_entry"><a href="Timer.html">Timer</a></div>
+				<div class="class_entry"><a href="TimerManager.html">TimerManager</a></div>
+				<div class="class_entry"><a href="Vector2.html">Vector2</a></div>
+				<div class="class_entry"><a href="Vector3.html">Vector3</a></div>
+				<div class="class_entry"><a href="Vertex.html">Vertex</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">Renderer</div>
+					<div class="class_desc"> Provides low-level settings for the main renderer. The methods and settings in this class are closely related to OpenGL. If you have trouble understanding anything in this class, it is thus suggested to brush up on your OpenGL knowledge. The renderer should only be accessed from the CoreServices singleton. Renderer operations should only be called from within Render methods of entities so that they can be properly managed. @see http://www.glprogramming.com/red/ @see http://nehe.gamedev.net/tutorial/lessons_01__05/22004/</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">Renderer.RENDER_MODE_NORMAL <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.RENDER_MODE_WIREFRAME <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.BLEND_MODE_NORMAL <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.BLEND_MODE_LIGHTEN <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.BLEND_MODE_COLOR <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.BLEND_MODE_PREMULTIPLIED <span class="static_value">= 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.BLEND_MODE_MULTIPLY <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.FOG_LINEAR <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.FOG_EXP <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.FOG_EXP2 <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.DEPTH_FUNCTION_GREATER <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.DEPTH_FUNCTION_LEQUAL <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.TEX_FILTERING_NEAREST <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Renderer.TEX_FILTERING_LINEAR <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">ambientColor</div>
+								<div class="class_property_type">Color</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">clearColor</div>
+								<div class="class_property_type">Color</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">exposureLevel</div>
+								<div class="class_property_type">Number</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">cameraPosition</div>
+								<div class="class_property_type">Vector3</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">doClearBuffer</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">blendNormalAsPremultiplied</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Init () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Resize ( <span class="inline_type">Integer</span> <span class="inline_param">xRes</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">yRes</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">yRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">BeginRender () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">EndRender () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createCubemap ( <span class="inline_type">Texture</span> <span class="inline_param">t0</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">t1</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">t2</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">t3</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">t4</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">t5</span> ) </div>
+								<div class="class_method_type">Cubemap</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t0</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t1</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t2</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t3</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t4</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">t5</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createTexture ( <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ,  <span class="inline_type">char</span> <span class="inline_param">textureData</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">clamp</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">createMipmaps</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ) </div>
+								<div class="class_method_type">Texture</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">textureData</div>
+									<div class="class_method_param_type">char</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">clamp</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">createMipmaps</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">destroyTexture ( <span class="inline_type">Texture</span> <span class="inline_param">texture</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">texture</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createRenderTextures ( <span class="inline_type">Texture</span> <span class="inline_param">colorBuffer</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">depthBuffer</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">floatingPointBuffer</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">colorBuffer</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">depthBuffer</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">floatingPointBuffer</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createFramebufferTexture ( <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">Texture</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">bindFrameBufferTexture ( <span class="inline_type">Texture</span> <span class="inline_param">texture</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">texture</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">bindFrameBufferTextureDepth ( <span class="inline_type">Texture</span> <span class="inline_param">texture</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">texture</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">unbindFramebuffers () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">renderScreenToImage () </div>
+								<div class="class_method_type">Image</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setFOV ( <span class="inline_type">Number</span> <span class="inline_param">fov</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fov</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setViewportSize ( <span class="inline_type">Integer</span> <span class="inline_param">w</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">h</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setViewportSizeAndFOV ( <span class="inline_type">Integer</span> <span class="inline_param">w</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">h</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fov</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fov</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">resetViewport () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">loadIdentity () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setOrthoMode ( <span class="inline_type">Number</span> <span class="inline_param">xSize</span> ,  <span class="inline_type">Number</span> <span class="inline_param">ySize</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">centered</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xSize</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ySize</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">centered</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_setOrthoMode ( <span class="inline_type">Number</span> <span class="inline_param">orthoSizeX</span> ,  <span class="inline_type">Number</span> <span class="inline_param">orthoSizeY</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">orthoSizeX</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">orthoSizeY</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setPerspectiveMode () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setTexture ( <span class="inline_type">Texture</span> <span class="inline_param">texture</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">texture</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableBackfaceCulling ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setClearColor ( <span class="inline_type">Number</span> <span class="inline_param">r</span> ,  <span class="inline_type">Number</span> <span class="inline_param">g</span> ,  <span class="inline_type">Number</span> <span class="inline_param">b</span> ,  <span class="inline_type">Number</span> <span class="inline_param">a</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">r</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">g</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">b</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">a</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setAmbientColor ( <span class="inline_type">Number</span> <span class="inline_param">r</span> ,  <span class="inline_type">Number</span> <span class="inline_param">g</span> ,  <span class="inline_type">Number</span> <span class="inline_param">b</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">r</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">g</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">b</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearScreen () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">translate2D ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">rotate2D ( <span class="inline_type">Number</span> <span class="inline_param">angle</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">angle</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">scale2D ( <span class="inline_type">Vector2</span> <span class="inline_param">scale</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">scale</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVertexColor ( <span class="inline_type">Number</span> <span class="inline_param">r</span> ,  <span class="inline_type">Number</span> <span class="inline_param">g</span> ,  <span class="inline_type">Number</span> <span class="inline_param">b</span> ,  <span class="inline_type">Number</span> <span class="inline_param">a</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">r</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">g</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">b</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">a</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">pushDataArrayForMesh ( <span class="inline_type">Mesh</span> <span class="inline_param">mesh</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">arrayType</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mesh</div>
+									<div class="class_method_param_type">Mesh</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">arrayType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">pushRenderDataArray ( <span class="inline_type">RenderDataArray</span> <span class="inline_param">array</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">array</div>
+									<div class="class_method_param_type">RenderDataArray</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createRenderDataArrayForMesh ( <span class="inline_type">Mesh</span> <span class="inline_param">mesh</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">arrayType</span> ) </div>
+								<div class="class_method_type">RenderDataArray</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mesh</div>
+									<div class="class_method_param_type">Mesh</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">arrayType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createRenderDataArray ( <span class="inline_type">Integer</span> <span class="inline_param">arrayType</span> ) </div>
+								<div class="class_method_type">RenderDataArray</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">arrayType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setRenderArrayData ( <span class="inline_type">RenderDataArray</span> <span class="inline_param">array</span> ,  <span class="inline_type">Number</span> <span class="inline_param">arrayData</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">array</div>
+									<div class="class_method_param_type">RenderDataArray</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">arrayData</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawArrays ( <span class="inline_type">Integer</span> <span class="inline_param">drawType</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">drawType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">translate3D ( <span class="inline_type">Vector3</span> <span class="inline_param">position</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">position</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">scale3D ( <span class="inline_type">Vector3</span> <span class="inline_param">scale</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">scale</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">pushMatrix () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">popMatrix () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setLineSmooth ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setLineSize ( <span class="inline_type">Number</span> <span class="inline_param">lineSize</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">lineSize</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableLighting ( <span class="inline_type">Boolean</span> <span class="inline_param">enable</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">enable</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableFog ( <span class="inline_type">Boolean</span> <span class="inline_param">enable</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">enable</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setFogProperties ( <span class="inline_type">Integer</span> <span class="inline_param">fogMode</span> ,  <span class="inline_type">Color</span> <span class="inline_param">color</span> ,  <span class="inline_type">Number</span> <span class="inline_param">density</span> ,  <span class="inline_type">Number</span> <span class="inline_param">startDepth</span> ,  <span class="inline_type">Number</span> <span class="inline_param">endDepth</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fogMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">density</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">startDepth</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">endDepth</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">multModelviewMatrix ( <span class="inline_type">Matrix4</span> <span class="inline_param">m</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">m</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setModelviewMatrix ( <span class="inline_type">Matrix4</span> <span class="inline_param">m</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">m</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCurrentModelMatrix ( <span class="inline_type">Matrix4</span> <span class="inline_param">m</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">m</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getCurrentModelMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setBlendingMode ( <span class="inline_type">Integer</span> <span class="inline_param">blendingMode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blendingMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyMaterial ( <span class="inline_type">Material</span> <span class="inline_param">material</span> ,  <span class="inline_type">ShaderBinding</span> <span class="inline_param">localOptions</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">shaderIndex</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">material</div>
+									<div class="class_method_param_type">Material</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">localOptions</div>
+									<div class="class_method_param_type">ShaderBinding</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shaderIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearShader () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setDepthFunction ( <span class="inline_type">Integer</span> <span class="inline_param">depthFunction</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">depthFunction</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createVertexBufferForMesh ( <span class="inline_type">Mesh</span> <span class="inline_param">mesh</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mesh</div>
+									<div class="class_method_param_type">Mesh</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawVertexBuffer ( <span class="inline_type">VertexBuffer</span> <span class="inline_param">buffer</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">enableColorBuffer</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">buffer</div>
+									<div class="class_method_param_type">VertexBuffer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">enableColorBuffer</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setRenderMode ( <span class="inline_type">Integer</span> <span class="inline_param">newRenderMode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newRenderMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getRenderMode () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableDepthTest ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableDepthWrite ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">billboardMatrix () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">billboardMatrixWithScale ( <span class="inline_type">Vector3</span> <span class="inline_param">scale</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">scale</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setTextureFilteringMode ( <span class="inline_type">Integer</span> <span class="inline_param">mode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setClippingPlanes ( <span class="inline_type">Number</span> <span class="inline_param">nearPlane</span> ,  <span class="inline_type">Number</span> <span class="inline_param">farPlane</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set the near and far clipping planes for the visible frustum. Please check the supplied external links for more information about the problems of a high farPlane/nearPlane setting. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">nearPlane</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">The new near clipping plane.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">farPlane</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">The new far clipping plane. @see http://en.wikipedia.org/wiki/Viewing_frustum @see http://www.opengl.org/sdk/docs/man2/xhtml/glFrustum.xml</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableAlphaTest ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Enable/disable alpha tests. If alpha tests are enabled, drawn pixels of textures will be "mixed" with framebuffer pixels based on the drawn pixel's alpha value. If alpha tests are disabled, they will be drawn as solid color. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Whether to enable or disable alpha tests.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearBuffer ( <span class="inline_type">Boolean</span> <span class="inline_param">colorBuffer</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">depthBuffer</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">colorBuffer</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">depthBuffer</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawToColorBuffer ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getCameraMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCameraMatrix ( <span class="inline_type">Matrix4</span> <span class="inline_param">matrix</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">matrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCameraPosition ( <span class="inline_type">Vector3</span> <span class="inline_param">pos</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">pos</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawScreenQuad ( <span class="inline_type">Number</span> <span class="inline_param">qx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">qy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">qx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">qy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getXRes () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getYRes () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isScissorEnabled () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableScissor ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setScissorBox ( <span class="inline_type">Rectangle</span> <span class="inline_param">box</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">box</div>
+									<div class="class_method_param_type">Rectangle</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScissorBox () </div>
+								<div class="class_method_type">Rectangle</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setAnisotropyAmount ( <span class="inline_type">Number</span> <span class="inline_param">amount</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amount</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getAnisotropyAmount () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">cullFrontFaces ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearLights () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addLight ( <span class="inline_type">Integer</span> <span class="inline_param">lightImportance</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">position</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">direction</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ,  <span class="inline_type">Color</span> <span class="inline_param">color</span> ,  <span class="inline_type">Color</span> <span class="inline_param">specularColor</span> ,  <span class="inline_type">Number</span> <span class="inline_param">constantAttenuation</span> ,  <span class="inline_type">Number</span> <span class="inline_param">linearAttenuation</span> ,  <span class="inline_type">Number</span> <span class="inline_param">quadraticAttenuation</span> ,  <span class="inline_type">Number</span> <span class="inline_param">intensity</span> ,  <span class="inline_type">Number</span> <span class="inline_param">spotlightCutoff</span> ,  <span class="inline_type">Number</span> <span class="inline_param">spotlightExponent</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">shadowsEnabled</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">textureMatrix</span> ,  <span class="inline_type">Texture</span> <span class="inline_param">shadowMapTexture</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">lightImportance</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">position</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">direction</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">specularColor</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">constantAttenuation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">linearAttenuation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">quadraticAttenuation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">intensity</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">spotlightCutoff</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">spotlightExponent</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shadowsEnabled</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">textureMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shadowMapTexture</div>
+									<div class="class_method_param_type">Texture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setExposureLevel ( <span class="inline_type">Number</span> <span class="inline_param">level</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">level</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">rayTriangleIntersect ( <span class="inline_type">Vector3</span> <span class="inline_param">ray_origin</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">ray_direction</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">vert0</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">vert1</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">vert2</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">hitPoint</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ray_origin</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ray_direction</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">vert0</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">vert1</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">vert2</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">hitPoint</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">projectRayFrom2DCoordinate ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">cameraMatrix</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">projectionMatrix</span> ) </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cameraMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">projectionMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableShaders ( <span class="inline_type">Boolean</span> <span class="inline_param">flag</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">flag</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getViewportWidth () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getViewportHeight () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setViewportShift ( <span class="inline_type">Number</span> <span class="inline_param">shiftX</span> ,  <span class="inline_type">Number</span> <span class="inline_param">shiftY</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shiftX</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shiftY</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getDataPointerForName ( <span class="inline_type">String</span> <span class="inline_param">name</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">name</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setRendererShaderParams ( <span class="inline_type">Shader</span> <span class="inline_param">shader</span> ,  <span class="inline_type">ShaderBinding</span> <span class="inline_param">binding</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shader</div>
+									<div class="class_method_param_type">Shader</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">binding</div>
+									<div class="class_method_param_type">ShaderBinding</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addShaderModule ( <span class="inline_type">PolycodeShaderModule</span> <span class="inline_param">module</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">module</div>
+									<div class="class_method_param_type">PolycodeShaderModule</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">test2DCoordinateInPolygon ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">cameraMatrix</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">projectionMatrix</span> ,  <span class="inline_type">Polygon</span> <span class="inline_param">poly</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">matrix</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">ortho</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">testBackfacing</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">billboardMode</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">reverseDirection</span> ,  <span class="inline_type">Matrix4</span> <span class="inline_param">adjustMatrix</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cameraMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">projectionMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">poly</div>
+									<div class="class_method_param_type">Polygon</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">matrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ortho</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">testBackfacing</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">billboardMode</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">reverseDirection</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">adjustMatrix</div>
+									<div class="class_method_param_type">Matrix4</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getProjectionMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getModelviewMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Unproject ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">sortLights () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getNumAreaLights () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getNumSpotLights () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getNumLights () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getAreaLights () </div>
+								<div class="class_method_type">LightInfo</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getSpotLights () </div>
+								<div class="class_method_type">LightInfo</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+				</div>

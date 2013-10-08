@@ -1,0 +1,324 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="PhysicsScreen.html">PhysicsScreen</a></div>
+				<div class="class_entry"><a href="PhysicsJoint.html">PhysicsJoint</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEvent.html">PhysicsScreenEvent</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEntity.html">PhysicsScreenEntity</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">PhysicsScreenEntity</div>
+					<div class="class_desc"> A 2D Physics enabled screen entity. </div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_RECT <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Rectangular physics entity</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_CIRCLE <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Circular physics entity</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_MESH <span class="static_value">= 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Mesh physics entity.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_EDGE <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Edge phyiscs Entity</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_CAPSULE <span class="static_value">= 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Capsule entity. </div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEntity.ENTITY_TRIPLE_CIRCLE <span class="static_value">= 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Three vertical circles.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">body</div>
+								<div class="class_property_type">b2Body</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">fixture</div>
+								<div class="class_property_type">b2Fixture</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">collisionOnly</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">PhysicsScreenEntity () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScreenEntity () </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> Returns the screen entity associated with this physics entity.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyTorque ( <span class="inline_type">Number</span> <span class="inline_param">torque</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Applies torque to the physics entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">torque</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyForce ( <span class="inline_type">Vector2</span> <span class="inline_param">force</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Applies force to the physics entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">force</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyImpulse ( <span class="inline_type">Number</span> <span class="inline_param">fx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Applies an impulse to the physics entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setTransform ( <span class="inline_type">Vector2</span> <span class="inline_param">pos</span> ,  <span class="inline_type">Number</span> <span class="inline_param">angle</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the position and rotation of entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">pos</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">angle</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocity ( <span class="inline_type">Number</span> <span class="inline_param">fx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the velocity of the physics entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocityX ( <span class="inline_type">Number</span> <span class="inline_param">fx</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocityY ( <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setLinearDamping ( <span class="inline_type">Number</span> <span class="inline_param">damping</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the dampening of the physics entity</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">damping</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setAngularDamping ( <span class="inline_type">Number</span> <span class="inline_param">damping</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">damping</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setFriction ( <span class="inline_type">Number</span> <span class="inline_param">friction</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">friction</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getLinearDamping () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns dampening information</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getAngularDamping () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getFriction () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setDensity ( <span class="inline_type">Number</span> <span class="inline_param">density</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets physics entity density</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">density</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getDensity () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCollisionCategory ( <span class="inline_type">Integer</span> <span class="inline_param">categoryBits</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets collision filtering Collision category specifies which bits on a 16 bit field the physics entity belongs to. default is 1 (or "0000000000000001") Collision mask specifies which bits the physics entity will collide with. default 65535 (or 0xFFFF, or "1111111111111111", or everything) If a physics entity's mask bits don't line up with any of an overlapping entity's category bits, their collisions will be skipped</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">categoryBits</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCollisionMask ( <span class="inline_type">Integer</span> <span class="inline_param">maskBits</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">maskBits</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCollisionGroupIndex ( <span class="inline_type">Integer</span> <span class="inline_param">group</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">group</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getFixture ( <span class="inline_type">Integer</span> <span class="inline_param">index</span> ) </div>
+								<div class="class_method_type">b2Fixture</div>
+								<div class="class_method_desc"> Gets a specific fixture based on it's index position</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">index</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

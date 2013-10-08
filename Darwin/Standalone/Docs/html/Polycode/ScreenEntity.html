@@ -1,0 +1,824 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="BezierCurve.html">BezierCurve</a></div>
+				<div class="class_entry"><a href="Bone.html">Bone</a></div>
+				<div class="class_entry"><a href="Camera.html">Camera</a></div>
+				<div class="class_entry"><a href="Color.html">Color</a></div>
+				<div class="class_entry"><a href="Config.html">Config</a></div>
+				<div class="class_entry"><a href="PolycodeViewBase.html">PolycodeViewBase</a></div>
+				<div class="class_entry"><a href="Core.html">Core</a></div>
+				<div class="class_entry"><a href="CoreInput.html">CoreInput</a></div>
+				<div class="class_entry"><a href="CoreServices.html">CoreServices</a></div>
+				<div class="class_entry"><a href="Cubemap.html">Cubemap</a></div>
+				<div class="class_entry"><a href="Data.html">Data</a></div>
+				<div class="class_entry"><a href="Rotation.html">Rotation</a></div>
+				<div class="class_entry"><a href="Entity.html">Entity</a></div>
+				<div class="class_entry"><a href="Event.html">Event</a></div>
+				<div class="class_entry"><a href="EventDispatcher.html">EventDispatcher</a></div>
+				<div class="class_entry"><a href="EventHandler.html">EventHandler</a></div>
+				<div class="class_entry"><a href="FixedShader.html">FixedShader</a></div>
+				<div class="class_entry"><a href="FixedShaderBinding.html">FixedShaderBinding</a></div>
+				<div class="class_entry"><a href="Font.html">Font</a></div>
+				<div class="class_entry"><a href="FontManager.html">FontManager</a></div>
+				<div class="class_entry"><a href="Image.html">Image</a></div>
+				<div class="class_entry"><a href="InputEvent.html">InputEvent</a></div>
+				<div class="class_entry"><a href="GlyphData.html">GlyphData</a></div>
+				<div class="class_entry"><a href="Label.html">Label</a></div>
+				<div class="class_entry"><a href="Material.html">Material</a></div>
+				<div class="class_entry"><a href="MaterialManager.html">MaterialManager</a></div>
+				<div class="class_entry"><a href="Matrix4.html">Matrix4</a></div>
+				<div class="class_entry"><a href="Mesh.html">Mesh</a></div>
+				<div class="class_entry"><a href="VertexBuffer.html">VertexBuffer</a></div>
+				<div class="class_entry"><a href="PolycodeModule.html">PolycodeModule</a></div>
+				<div class="class_entry"><a href="ObjectEntry.html">ObjectEntry</a></div>
+				<div class="class_entry"><a href="BinaryObjectReader.html">BinaryObjectReader</a></div>
+				<div class="class_entry"><a href="BinaryObjectWriter.html">BinaryObjectWriter</a></div>
+				<div class="class_entry"><a href="Particle.html">Particle</a></div>
+				<div class="class_entry"><a href="ScreenParticleEmitter.html">ScreenParticleEmitter</a></div>
+				<div class="class_entry"><a href="SceneParticleEmitter.html">SceneParticleEmitter</a></div>
+				<div class="class_entry"><a href="ParticleEmitter.html">ParticleEmitter</a></div>
+				<div class="class_entry"><a href="Perlin.html">Perlin</a></div>
+				<div class="class_entry"><a href="Polygon.html">Polygon</a></div>
+				<div class="class_entry"><a href="Quaternion.html">Quaternion</a></div>
+				<div class="class_entry"><a href="QuaternionCurve.html">QuaternionCurve</a></div>
+				<div class="class_entry"><a href="Rectangle.html">Rectangle</a></div>
+				<div class="class_entry"><a href="Renderer.html">Renderer</a></div>
+				<div class="class_entry"><a href="Resource.html">Resource</a></div>
+				<div class="class_entry"><a href="ResourceManager.html">ResourceManager</a></div>
+				<div class="class_entry"><a href="Scene.html">Scene</a></div>
+				<div class="class_entry"><a href="SceneEntity.html">SceneEntity</a></div>
+				<div class="class_entry"><a href="SceneLabel.html">SceneLabel</a></div>
+				<div class="class_entry"><a href="SceneLight.html">SceneLight</a></div>
+				<div class="class_entry"><a href="SceneLine.html">SceneLine</a></div>
+				<div class="class_entry"><a href="SceneManager.html">SceneManager</a></div>
+				<div class="class_entry"><a href="SceneMesh.html">SceneMesh</a></div>
+				<div class="class_entry"><a href="ScenePrimitive.html">ScenePrimitive</a></div>
+				<div class="class_entry"><a href="SceneRenderTexture.html">SceneRenderTexture</a></div>
+				<div class="class_entry"><a href="SceneSound.html">SceneSound</a></div>
+				<div class="class_entry"><a href="SceneSoundListener.html">SceneSoundListener</a></div>
+				<div class="class_entry"><a href="Screen.html">Screen</a></div>
+				<div class="class_entry"><a href="ScreenEntity.html">ScreenEntity</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstance.html">ScreenEntityInstance</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstanceResourceEntry.html">ScreenEntityInstanceResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenEvent.html">ScreenEvent</a></div>
+				<div class="class_entry"><a href="ScreenImage.html">ScreenImage</a></div>
+				<div class="class_entry"><a href="ScreenLabel.html">ScreenLabel</a></div>
+				<div class="class_entry"><a href="ScreenLine.html">ScreenLine</a></div>
+				<div class="class_entry"><a href="ScreenManager.html">ScreenManager</a></div>
+				<div class="class_entry"><a href="ScreenMesh.html">ScreenMesh</a></div>
+				<div class="class_entry"><a href="ScreenShape.html">ScreenShape</a></div>
+				<div class="class_entry"><a href="ScreenSoundListener.html">ScreenSoundListener</a></div>
+				<div class="class_entry"><a href="ScreenSound.html">ScreenSound</a></div>
+				<div class="class_entry"><a href="ScreenSpriteResourceEntry.html">ScreenSpriteResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenSprite.html">ScreenSprite</a></div>
+				<div class="class_entry"><a href="Shader.html">Shader</a></div>
+				<div class="class_entry"><a href="LocalShaderParam.html">LocalShaderParam</a></div>
+				<div class="class_entry"><a href="ShaderProgram.html">ShaderProgram</a></div>
+				<div class="class_entry"><a href="ShaderBinding.html">ShaderBinding</a></div>
+				<div class="class_entry"><a href="SkeletonAnimation.html">SkeletonAnimation</a></div>
+				<div class="class_entry"><a href="Skeleton.html">Skeleton</a></div>
+				<div class="class_entry"><a href="BoneTrack.html">BoneTrack</a></div>
+				<div class="class_entry"><a href="Sound.html">Sound</a></div>
+				<div class="class_entry"><a href="SoundManager.html">SoundManager</a></div>
+				<div class="class_entry"><a href="String.html">String</a></div>
+				<div class="class_entry"><a href="Texture.html">Texture</a></div>
+				<div class="class_entry"><a href="Timer.html">Timer</a></div>
+				<div class="class_entry"><a href="TimerManager.html">TimerManager</a></div>
+				<div class="class_entry"><a href="Vector2.html">Vector2</a></div>
+				<div class="class_entry"><a href="Vector3.html">Vector3</a></div>
+				<div class="class_entry"><a href="Vertex.html">Vertex</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">ScreenEntity <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Polycode/Entity.html">Entity</a></span></div>
+					<div class="class_desc"> 2D Entity base. The ScreenEntity is the base class for all 2D elements in Polycode. They can be added to a screen or to other ScreenEntities and are rendered automatically. If you want to create custom screen objects, subclass this. ScreenEntity subclasses Entity, which use 3d positioning and tranformation, but provides some 2d-only versions of the transformation functions for convenience.</div>
+					<div class="class_desc">NOTE: ScreenEntity instances are not automatically garbage collected.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">ScreenEntity.POSITION_TOPLEFT <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Positioning mode in which you specify an entity's topleft corner as coordinate for placement.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">ScreenEntity.POSITION_CENTER <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Positioning mode in which you specify an entity's center as coordinate for placement.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">hasFocus</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">blockMouseInput</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc"> If set to true, will block mouse events for underlaying entities. (NOTE: processInputEvents must be set to true)</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">snapToPixels</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc"> If this option is true, the screen entity's positions will be roudnded to whole pixels. This only works if the screen is </div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">processInputEvents</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">width</div>
+								<div class="class_property_type">Number</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">height</div>
+								<div class="class_property_type">Number</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">ScreenEntity () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Clone ( <span class="inline_type">Boolean</span> <span class="inline_param">deepClone</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">ignoreEditorOnly</span> ) </div>
+								<div class="class_method_type">Entity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">deepClone</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ignoreEditorOnly</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyClone ( <span class="inline_type">Entity</span> <span class="inline_param">clone</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">deepClone</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">ignoreEditorOnly</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">clone</div>
+									<div class="class_method_param_type">Entity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">deepClone</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ignoreEditorOnly</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addEntity ( <span class="inline_type">Entity</span> <span class="inline_param">newChild</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newChild</div>
+									<div class="class_method_param_type">Entity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setPosition ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set 2d position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Horizontal position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Vertical position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setScale ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set 2d scale. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Horizontal scale.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Vertical scale.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setRotation ( <span class="inline_type">Number</span> <span class="inline_param">rotation</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set 2d rotation. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">rotation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New rotation value in degrees.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getRotation () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns current rotation. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onMouseDown ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">mouseButton</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">timestamp</span> ) </div>
+								<div class="class_method_type">MouseEventResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mouseButton</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">timestamp</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onMouseUp ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">mouseButton</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">timestamp</span> ) </div>
+								<div class="class_method_type">MouseEventResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mouseButton</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">timestamp</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onMouseMove ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">timestamp</span> ) </div>
+								<div class="class_method_type">MouseEventResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">timestamp</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onMouseWheelUp ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">timestamp</span> ) </div>
+								<div class="class_method_type">MouseEventResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">timestamp</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onMouseWheelDown ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">timestamp</span> ) </div>
+								<div class="class_method_type">MouseEventResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">timestamp</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseDown ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseUp ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseMove ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseWheelUp ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseWheelDown ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onKeyDown ( <span class="inline_type">PolyKEY</span> <span class="inline_param">key</span> ,  <span class="inline_type">wchar_t</span> <span class="inline_param">charCode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">key</div>
+									<div class="class_method_param_type">PolyKEY</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">charCode</div>
+									<div class="class_method_param_type">wchar_t</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">_onKeyUp ( <span class="inline_type">PolyKEY</span> <span class="inline_param">key</span> ,  <span class="inline_type">wchar_t</span> <span class="inline_param">charCode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">key</div>
+									<div class="class_method_param_type">PolyKEY</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">charCode</div>
+									<div class="class_method_param_type">wchar_t</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScreenConcatenatedMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onKeyDown ( <span class="inline_type">PolyKEY</span> <span class="inline_param">key</span> ,  <span class="inline_type">wchar_t</span> <span class="inline_param">charCode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">key</div>
+									<div class="class_method_param_type">PolyKEY</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">charCode</div>
+									<div class="class_method_param_type">wchar_t</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onKeyUp ( <span class="inline_type">PolyKEY</span> <span class="inline_param">key</span> ,  <span class="inline_type">wchar_t</span> <span class="inline_param">charCode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">key</div>
+									<div class="class_method_param_type">PolyKEY</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">charCode</div>
+									<div class="class_method_param_type">wchar_t</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">hitTest ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">buildPositionMatrix () </div>
+								<div class="class_method_type">Matrix4</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">adjustMatrixForChildren () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getWidth () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the width of the screen entity. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getHeight () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the height of the screen entity.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setWidth ( <span class="inline_type">Number</span> <span class="inline_param">w</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the width of the screen entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New height value.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setHeight ( <span class="inline_type">Number</span> <span class="inline_param">h</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the height of the screen entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New height value.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onGainFocus () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onLoseFocus () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">startDrag ( <span class="inline_type">Number</span> <span class="inline_param">xOffset</span> ,  <span class="inline_type">Number</span> <span class="inline_param">yOffset</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xOffset</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">yOffset</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">stopDrag () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setBlendingMode ( <span class="inline_type">Integer</span> <span class="inline_param">newBlendingMode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newBlendingMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setPositionMode ( <span class="inline_type">Integer</span> <span class="inline_param">newPositionMode</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">  Changes the positioning mode of the screen entity.If the positioning mode is ScreenEntity.POSITION_TOPLEFT, the entity is translated by half its width and half its height when it's rendered, making all other transformations relative to its top-left corner instead of the center.If the mode is ScreenEntity.POSITION_CENTER, the entity is rendered as is.Set to POSITION_CENTER by default.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newPositionMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">The new positioning mode.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPositionMode () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Get the position mode. @see setPositionMode()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setDragLimits ( <span class="inline_type">Rectangle</span> <span class="inline_param">rect</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set a rectangle to which dragging will be restricted. Dragging the item past the given rectangle will snap it back to the edge of the rectangle. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">rect</div>
+									<div class="class_method_param_type">Rectangle</div>
+									<div class="class_method_param_desc">The rectangle to restrict dragging to. Uses the same positioning mode as `this->position`.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearDragLimits () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Disable restricting where `this` can be dragged. @see setDragLimits()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setDefaultScreenOptions ( <span class="inline_type">Boolean</span> <span class="inline_param">snapToPixels</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set options for `this` and all children recursively. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">snapToPixels</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Whether to snap entity positions to pixels before rendering.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">focusChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">child</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">child</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">focusNextChild () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPosition2D () </div>
+								<div class="class_method_type">Vector2</div>
+								<div class="class_method_desc"> Same semantics as getPosition(), but returns only the x and y coordinates.  @see getPosition() @see getScreenPosition()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScreenPosition () </div>
+								<div class="class_method_type">Vector2</div>
+								<div class="class_method_desc"> Get the position of ScreenEntity in relation to the top-left corner of the Polycode screen it's on. This is unlike getPosition(), which will return the position of an Entity in relation to its parent Entity. @see getPosition()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScale2D () </div>
+								<div class="class_method_type">Vector2</div>
+								<div class="class_method_desc"> Same semantics as getScale(), but returns only the x and y scale. @see getScale()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isFocusable () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScreenEntityById ( <span class="inline_type">String</span> <span class="inline_param">id</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">recursive</span> ) </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> Does the same as getEntityByID, but casts to ScreenEntity. Note: Make sure only entities of type ScreenEntity have the tag you're       querying, or otherwise you will be treating an Entity as ScreenEntity.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">id</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">recursive</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getScreenEntitiesByTag ( <span class="inline_type">String</span> <span class="inline_param">tag</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">recursive</span> ) </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> Does the same as getEntitiesByID, but casts each result to ScreenEntity. Note: Make sure only entities of type ScreenEntity have the tag you're       querying, or otherwise you will be treating an Entity as ScreenEntity.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">tag</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">recursive</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getHitbox () </div>
+								<div class="class_method_type">Rectangle</div>
+								<div class="class_method_desc"> Get the hitbox of this ScreenEntity. @see setHitBox()</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setHitbox ( <span class="inline_type">Number</span> <span class="inline_param">width</span> ,  <span class="inline_type">Number</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isDragged () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Get the drag status (true if currently being dragged) of the entity.</div>
+							</div>
+						</div>
+					</div>
+				</div>

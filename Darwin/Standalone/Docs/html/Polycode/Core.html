@@ -1,0 +1,690 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="BezierCurve.html">BezierCurve</a></div>
+				<div class="class_entry"><a href="Bone.html">Bone</a></div>
+				<div class="class_entry"><a href="Camera.html">Camera</a></div>
+				<div class="class_entry"><a href="Color.html">Color</a></div>
+				<div class="class_entry"><a href="Config.html">Config</a></div>
+				<div class="class_entry"><a href="PolycodeViewBase.html">PolycodeViewBase</a></div>
+				<div class="class_entry"><a href="Core.html">Core</a></div>
+				<div class="class_entry"><a href="CoreInput.html">CoreInput</a></div>
+				<div class="class_entry"><a href="CoreServices.html">CoreServices</a></div>
+				<div class="class_entry"><a href="Cubemap.html">Cubemap</a></div>
+				<div class="class_entry"><a href="Data.html">Data</a></div>
+				<div class="class_entry"><a href="Rotation.html">Rotation</a></div>
+				<div class="class_entry"><a href="Entity.html">Entity</a></div>
+				<div class="class_entry"><a href="Event.html">Event</a></div>
+				<div class="class_entry"><a href="EventDispatcher.html">EventDispatcher</a></div>
+				<div class="class_entry"><a href="EventHandler.html">EventHandler</a></div>
+				<div class="class_entry"><a href="FixedShader.html">FixedShader</a></div>
+				<div class="class_entry"><a href="FixedShaderBinding.html">FixedShaderBinding</a></div>
+				<div class="class_entry"><a href="Font.html">Font</a></div>
+				<div class="class_entry"><a href="FontManager.html">FontManager</a></div>
+				<div class="class_entry"><a href="Image.html">Image</a></div>
+				<div class="class_entry"><a href="InputEvent.html">InputEvent</a></div>
+				<div class="class_entry"><a href="GlyphData.html">GlyphData</a></div>
+				<div class="class_entry"><a href="Label.html">Label</a></div>
+				<div class="class_entry"><a href="Material.html">Material</a></div>
+				<div class="class_entry"><a href="MaterialManager.html">MaterialManager</a></div>
+				<div class="class_entry"><a href="Matrix4.html">Matrix4</a></div>
+				<div class="class_entry"><a href="Mesh.html">Mesh</a></div>
+				<div class="class_entry"><a href="VertexBuffer.html">VertexBuffer</a></div>
+				<div class="class_entry"><a href="PolycodeModule.html">PolycodeModule</a></div>
+				<div class="class_entry"><a href="ObjectEntry.html">ObjectEntry</a></div>
+				<div class="class_entry"><a href="BinaryObjectReader.html">BinaryObjectReader</a></div>
+				<div class="class_entry"><a href="BinaryObjectWriter.html">BinaryObjectWriter</a></div>
+				<div class="class_entry"><a href="Particle.html">Particle</a></div>
+				<div class="class_entry"><a href="ScreenParticleEmitter.html">ScreenParticleEmitter</a></div>
+				<div class="class_entry"><a href="SceneParticleEmitter.html">SceneParticleEmitter</a></div>
+				<div class="class_entry"><a href="ParticleEmitter.html">ParticleEmitter</a></div>
+				<div class="class_entry"><a href="Perlin.html">Perlin</a></div>
+				<div class="class_entry"><a href="Polygon.html">Polygon</a></div>
+				<div class="class_entry"><a href="Quaternion.html">Quaternion</a></div>
+				<div class="class_entry"><a href="QuaternionCurve.html">QuaternionCurve</a></div>
+				<div class="class_entry"><a href="Rectangle.html">Rectangle</a></div>
+				<div class="class_entry"><a href="Renderer.html">Renderer</a></div>
+				<div class="class_entry"><a href="Resource.html">Resource</a></div>
+				<div class="class_entry"><a href="ResourceManager.html">ResourceManager</a></div>
+				<div class="class_entry"><a href="Scene.html">Scene</a></div>
+				<div class="class_entry"><a href="SceneEntity.html">SceneEntity</a></div>
+				<div class="class_entry"><a href="SceneLabel.html">SceneLabel</a></div>
+				<div class="class_entry"><a href="SceneLight.html">SceneLight</a></div>
+				<div class="class_entry"><a href="SceneLine.html">SceneLine</a></div>
+				<div class="class_entry"><a href="SceneManager.html">SceneManager</a></div>
+				<div class="class_entry"><a href="SceneMesh.html">SceneMesh</a></div>
+				<div class="class_entry"><a href="ScenePrimitive.html">ScenePrimitive</a></div>
+				<div class="class_entry"><a href="SceneRenderTexture.html">SceneRenderTexture</a></div>
+				<div class="class_entry"><a href="SceneSound.html">SceneSound</a></div>
+				<div class="class_entry"><a href="SceneSoundListener.html">SceneSoundListener</a></div>
+				<div class="class_entry"><a href="Screen.html">Screen</a></div>
+				<div class="class_entry"><a href="ScreenEntity.html">ScreenEntity</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstance.html">ScreenEntityInstance</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstanceResourceEntry.html">ScreenEntityInstanceResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenEvent.html">ScreenEvent</a></div>
+				<div class="class_entry"><a href="ScreenImage.html">ScreenImage</a></div>
+				<div class="class_entry"><a href="ScreenLabel.html">ScreenLabel</a></div>
+				<div class="class_entry"><a href="ScreenLine.html">ScreenLine</a></div>
+				<div class="class_entry"><a href="ScreenManager.html">ScreenManager</a></div>
+				<div class="class_entry"><a href="ScreenMesh.html">ScreenMesh</a></div>
+				<div class="class_entry"><a href="ScreenShape.html">ScreenShape</a></div>
+				<div class="class_entry"><a href="ScreenSoundListener.html">ScreenSoundListener</a></div>
+				<div class="class_entry"><a href="ScreenSound.html">ScreenSound</a></div>
+				<div class="class_entry"><a href="ScreenSpriteResourceEntry.html">ScreenSpriteResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenSprite.html">ScreenSprite</a></div>
+				<div class="class_entry"><a href="Shader.html">Shader</a></div>
+				<div class="class_entry"><a href="LocalShaderParam.html">LocalShaderParam</a></div>
+				<div class="class_entry"><a href="ShaderProgram.html">ShaderProgram</a></div>
+				<div class="class_entry"><a href="ShaderBinding.html">ShaderBinding</a></div>
+				<div class="class_entry"><a href="SkeletonAnimation.html">SkeletonAnimation</a></div>
+				<div class="class_entry"><a href="Skeleton.html">Skeleton</a></div>
+				<div class="class_entry"><a href="BoneTrack.html">BoneTrack</a></div>
+				<div class="class_entry"><a href="Sound.html">Sound</a></div>
+				<div class="class_entry"><a href="SoundManager.html">SoundManager</a></div>
+				<div class="class_entry"><a href="String.html">String</a></div>
+				<div class="class_entry"><a href="Texture.html">Texture</a></div>
+				<div class="class_entry"><a href="Timer.html">Timer</a></div>
+				<div class="class_entry"><a href="TimerManager.html">TimerManager</a></div>
+				<div class="class_entry"><a href="Vector2.html">Vector2</a></div>
+				<div class="class_entry"><a href="Vector3.html">Vector3</a></div>
+				<div class="class_entry"><a href="Vertex.html">Vertex</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">Core <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Polycode/EventDispatcher.html">EventDispatcher</a></span></div>
+					<div class="class_desc"> The main core of the framework. The core deals with system-level functions, such as window initialization and OS interaction. Each platform has its own implementation of this base class. NOTE: SOME OF THE FUNCTIONALITY IN THE CORE IS NOT FULLY IMPLEMENTED!!</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENTBASE_CORE <span class="static_value">= 0x200</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_CORE_RESIZE <span class="static_value">= EVENTBASE_CORE + 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_LOST_FOCUS <span class="static_value">= EVENTBASE_CORE + 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_GAINED_FOCUS <span class="static_value">= EVENTBASE_CORE + 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_UNDO <span class="static_value">= EVENTBASE_CORE + 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_REDO <span class="static_value">= EVENTBASE_CORE + 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_COPY <span class="static_value">= EVENTBASE_CORE + 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_CUT <span class="static_value">= EVENTBASE_CORE + 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_SELECT_ALL <span class="static_value">= EVENTBASE_CORE + 7</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.EVENT_PASTE <span class="static_value">= EVENTBASE_CORE + 8</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_ARROW <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_TEXT <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_POINTER <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_CROSSHAIR <span class="static_value">= 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_RESIZE_LEFT_RIGHT <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_RESIZE_UP_DOWN <span class="static_value">= 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Core.CURSOR_OPEN_HAND <span class="static_value">= 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">eventMutex</div>
+								<div class="class_property_type">CoreMutex</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">paused</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">pauseOnLoseFocus</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">defaultScreenWidth</div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Default width of the desktop screen</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">defaultScreenHeight</div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Default height of the desktop screen</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Static Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Core.getScreenInfo ( <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">hz</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Provides the current width, height, and refresh rate of the screen. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">If non-NULL, current screen width will be written here (or 0 if unknown).</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">If non-NULL, current screen height will be written here (or 0 if unknown).</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">hz</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">If non-NULL, current screen refresh rate will be written here (or 0 if unknown).</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Render () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">updateAndRender () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableMouse ( <span class="inline_type">Boolean</span> <span class="inline_param">newval</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Show or hide cursor. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newval</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">True to show mouse, false to hide it.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">captureMouse ( <span class="inline_type">Boolean</span> <span class="inline_param">newval</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Capture the mouse. The mouse will be unable to exit the polycode screen.  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newval</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">True to capture the mouse, false to uncapture it.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setCursor ( <span class="inline_type">Integer</span> <span class="inline_param">cursorType</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the cursor the application is using. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cursorType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Type of cursor to use. Possible values are CURSOR_ARROW, CURSOR_TEXT, CURSOR_POINTER, CURSOR_CROSSHAIR, CURSOR_RESIZE_LEFT_RIGHT, CURSOR_RESIZE_UP_DOWN</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">warpCursor ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Warps the cursor to a specified point in the window. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New cursor x position</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New cursor y position</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createThread ( <span class="inline_type">Threaded</span> <span class="inline_param">target</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Launches a Threaded class into its own thread. See the documentation for Threaded for information on how to crated threaded classes. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">target</div>
+									<div class="class_method_param_type">Threaded</div>
+									<div class="class_method_param_desc">Target threaded class. @see Threaded</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">lockMutex ( <span class="inline_type">CoreMutex</span> <span class="inline_param">mutex</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Locks a mutex. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mutex</div>
+									<div class="class_method_param_type">CoreMutex</div>
+									<div class="class_method_param_desc">Mutex to lock.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">unlockMutex ( <span class="inline_type">CoreMutex</span> <span class="inline_param">mutex</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Unlocks a mutex. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mutex</div>
+									<div class="class_method_param_type">CoreMutex</div>
+									<div class="class_method_param_desc">Mutex to lock.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createMutex () </div>
+								<div class="class_method_type">CoreMutex</div>
+								<div class="class_method_desc"> Creates a mutex </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">copyStringToClipboard ( <span class="inline_type">String</span> <span class="inline_param">str</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Copies the specified string to system clipboard. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">str</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">String to copy to clipboard.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getClipboardString () </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc"> Returns the system clipboard as a string. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getServices () </div>
+								<div class="class_method_type">CoreServices</div>
+								<div class="class_method_desc"> Returns the core services. See CoreServices for a detailed explanation of services. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getFPS () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the current average frames per second. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Shutdown () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Shuts down the core and quits the application.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isFullscreen () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Checks if core is in fullscreen mode. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getAALevel () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the current anti-aliasing level. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getInput () </div>
+								<div class="class_method_type">CoreInput</div>
+								<div class="class_method_desc"> Returns the input class. See CoreInput for details in input. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getXRes () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns current horizontal resolution. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getYRes () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns current vertical resolution. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createFolder ( <span class="inline_type">String</span> <span class="inline_param">folderPath</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a folder on disk with the specified path. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">folderPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to create the folder in.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">copyDiskItem ( <span class="inline_type">String</span> <span class="inline_param">itemPath</span> ,  <span class="inline_type">String</span> <span class="inline_param">destItemPath</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Copies a disk item from one path to another </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">itemPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to the item to copy.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">destItemPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Destination path to copy to.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">moveDiskItem ( <span class="inline_type">String</span> <span class="inline_param">itemPath</span> ,  <span class="inline_type">String</span> <span class="inline_param">destItemPath</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Moves a disk item from one path to another </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">itemPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to the item to move.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">destItemPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Destination path to move to.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removeDiskItem ( <span class="inline_type">String</span> <span class="inline_param">itemPath</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Removes a disk item. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">itemPath</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to the item to remove.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">openFolderPicker () </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc"> Opens a system folder picker and suspends operation. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setFramerate ( <span class="inline_type">Integer</span> <span class="inline_param">frameRate</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">frameRate</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">openFilePicker ( <span class="inline_type">CoreFileExtension</span> <span class="inline_param">extensions</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">allowMultiple</span> ) </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc"> Opens a system file picker for the specified extensions. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">extensions</div>
+									<div class="class_method_param_type">CoreFileExtension</div>
+									<div class="class_method_param_desc">An STL vector containing the allowed file extensions that can be selected.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">allowMultiple</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If set to true, the picker can select multiple files.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVideoMode ( <span class="inline_type">Integer</span> <span class="inline_param">xRes</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">yRes</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">fullScreen</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">vSync</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">aaLevel</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">anisotropyLevel</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets a new video mode. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New horizontal resolution of the renderer.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">yRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New vertical resolution of the renderer.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fullScreen</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">True to launch in fullscreen, false to launch in window.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">vSync</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Level of anti-aliasing. Possible values are 2,4 and 6.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">aaLevel</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">anisotropyLevel</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">resizeTo ( <span class="inline_type">Integer</span> <span class="inline_param">xRes</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">yRes</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Resizes the renderer. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New horizontal resolution of the renderer.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">yRes</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New vertical resolution of the renderer.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">doSleep () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">openURL ( <span class="inline_type">String</span> <span class="inline_param">url</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Launches the default browser and directs it to specified URL </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">url</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">URL to launch.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getElapsed () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the time elapsed since last frame. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getTicks () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the total ticks elapsed since launch. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getTicksFloat () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the total ticks elapsed since launch. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setUserPointer ( <span class="inline_type">nil</span> <span class="inline_param">ptr</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ptr</div>
+									<div class="class_method_param_type">nil</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getUserPointer () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">executeExternalCommand ( <span class="inline_type">String</span> <span class="inline_param">command</span> ,  <span class="inline_type">String</span> <span class="inline_param">args</span> ,  <span class="inline_type">String</span> <span class="inline_param">inDirectory</span> ) </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">command</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">args</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">inDirectory</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getDefaultWorkingDirectory () </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc"> Returns the default working path of the application.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getUserHomeDirectory () </div>
+								<div class="class_method_type">String</div>
+								<div class="class_method_desc"> Returns the default working path of the application.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">makeApplicationMain () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Brings the application on top (Cocoa only for now).</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getEventMutex () </div>
+								<div class="class_method_type">CoreMutex</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removeThread ( <span class="inline_type">Threaded</span> <span class="inline_param">thread</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">thread</div>
+									<div class="class_method_param_type">Threaded</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

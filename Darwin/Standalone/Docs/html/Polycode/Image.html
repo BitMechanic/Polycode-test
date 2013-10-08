@@ -1,0 +1,745 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="BezierCurve.html">BezierCurve</a></div>
+				<div class="class_entry"><a href="Bone.html">Bone</a></div>
+				<div class="class_entry"><a href="Camera.html">Camera</a></div>
+				<div class="class_entry"><a href="Color.html">Color</a></div>
+				<div class="class_entry"><a href="Config.html">Config</a></div>
+				<div class="class_entry"><a href="PolycodeViewBase.html">PolycodeViewBase</a></div>
+				<div class="class_entry"><a href="Core.html">Core</a></div>
+				<div class="class_entry"><a href="CoreInput.html">CoreInput</a></div>
+				<div class="class_entry"><a href="CoreServices.html">CoreServices</a></div>
+				<div class="class_entry"><a href="Cubemap.html">Cubemap</a></div>
+				<div class="class_entry"><a href="Data.html">Data</a></div>
+				<div class="class_entry"><a href="Rotation.html">Rotation</a></div>
+				<div class="class_entry"><a href="Entity.html">Entity</a></div>
+				<div class="class_entry"><a href="Event.html">Event</a></div>
+				<div class="class_entry"><a href="EventDispatcher.html">EventDispatcher</a></div>
+				<div class="class_entry"><a href="EventHandler.html">EventHandler</a></div>
+				<div class="class_entry"><a href="FixedShader.html">FixedShader</a></div>
+				<div class="class_entry"><a href="FixedShaderBinding.html">FixedShaderBinding</a></div>
+				<div class="class_entry"><a href="Font.html">Font</a></div>
+				<div class="class_entry"><a href="FontManager.html">FontManager</a></div>
+				<div class="class_entry"><a href="Image.html">Image</a></div>
+				<div class="class_entry"><a href="InputEvent.html">InputEvent</a></div>
+				<div class="class_entry"><a href="GlyphData.html">GlyphData</a></div>
+				<div class="class_entry"><a href="Label.html">Label</a></div>
+				<div class="class_entry"><a href="Material.html">Material</a></div>
+				<div class="class_entry"><a href="MaterialManager.html">MaterialManager</a></div>
+				<div class="class_entry"><a href="Matrix4.html">Matrix4</a></div>
+				<div class="class_entry"><a href="Mesh.html">Mesh</a></div>
+				<div class="class_entry"><a href="VertexBuffer.html">VertexBuffer</a></div>
+				<div class="class_entry"><a href="PolycodeModule.html">PolycodeModule</a></div>
+				<div class="class_entry"><a href="ObjectEntry.html">ObjectEntry</a></div>
+				<div class="class_entry"><a href="BinaryObjectReader.html">BinaryObjectReader</a></div>
+				<div class="class_entry"><a href="BinaryObjectWriter.html">BinaryObjectWriter</a></div>
+				<div class="class_entry"><a href="Particle.html">Particle</a></div>
+				<div class="class_entry"><a href="ScreenParticleEmitter.html">ScreenParticleEmitter</a></div>
+				<div class="class_entry"><a href="SceneParticleEmitter.html">SceneParticleEmitter</a></div>
+				<div class="class_entry"><a href="ParticleEmitter.html">ParticleEmitter</a></div>
+				<div class="class_entry"><a href="Perlin.html">Perlin</a></div>
+				<div class="class_entry"><a href="Polygon.html">Polygon</a></div>
+				<div class="class_entry"><a href="Quaternion.html">Quaternion</a></div>
+				<div class="class_entry"><a href="QuaternionCurve.html">QuaternionCurve</a></div>
+				<div class="class_entry"><a href="Rectangle.html">Rectangle</a></div>
+				<div class="class_entry"><a href="Renderer.html">Renderer</a></div>
+				<div class="class_entry"><a href="Resource.html">Resource</a></div>
+				<div class="class_entry"><a href="ResourceManager.html">ResourceManager</a></div>
+				<div class="class_entry"><a href="Scene.html">Scene</a></div>
+				<div class="class_entry"><a href="SceneEntity.html">SceneEntity</a></div>
+				<div class="class_entry"><a href="SceneLabel.html">SceneLabel</a></div>
+				<div class="class_entry"><a href="SceneLight.html">SceneLight</a></div>
+				<div class="class_entry"><a href="SceneLine.html">SceneLine</a></div>
+				<div class="class_entry"><a href="SceneManager.html">SceneManager</a></div>
+				<div class="class_entry"><a href="SceneMesh.html">SceneMesh</a></div>
+				<div class="class_entry"><a href="ScenePrimitive.html">ScenePrimitive</a></div>
+				<div class="class_entry"><a href="SceneRenderTexture.html">SceneRenderTexture</a></div>
+				<div class="class_entry"><a href="SceneSound.html">SceneSound</a></div>
+				<div class="class_entry"><a href="SceneSoundListener.html">SceneSoundListener</a></div>
+				<div class="class_entry"><a href="Screen.html">Screen</a></div>
+				<div class="class_entry"><a href="ScreenEntity.html">ScreenEntity</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstance.html">ScreenEntityInstance</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstanceResourceEntry.html">ScreenEntityInstanceResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenEvent.html">ScreenEvent</a></div>
+				<div class="class_entry"><a href="ScreenImage.html">ScreenImage</a></div>
+				<div class="class_entry"><a href="ScreenLabel.html">ScreenLabel</a></div>
+				<div class="class_entry"><a href="ScreenLine.html">ScreenLine</a></div>
+				<div class="class_entry"><a href="ScreenManager.html">ScreenManager</a></div>
+				<div class="class_entry"><a href="ScreenMesh.html">ScreenMesh</a></div>
+				<div class="class_entry"><a href="ScreenShape.html">ScreenShape</a></div>
+				<div class="class_entry"><a href="ScreenSoundListener.html">ScreenSoundListener</a></div>
+				<div class="class_entry"><a href="ScreenSound.html">ScreenSound</a></div>
+				<div class="class_entry"><a href="ScreenSpriteResourceEntry.html">ScreenSpriteResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenSprite.html">ScreenSprite</a></div>
+				<div class="class_entry"><a href="Shader.html">Shader</a></div>
+				<div class="class_entry"><a href="LocalShaderParam.html">LocalShaderParam</a></div>
+				<div class="class_entry"><a href="ShaderProgram.html">ShaderProgram</a></div>
+				<div class="class_entry"><a href="ShaderBinding.html">ShaderBinding</a></div>
+				<div class="class_entry"><a href="SkeletonAnimation.html">SkeletonAnimation</a></div>
+				<div class="class_entry"><a href="Skeleton.html">Skeleton</a></div>
+				<div class="class_entry"><a href="BoneTrack.html">BoneTrack</a></div>
+				<div class="class_entry"><a href="Sound.html">Sound</a></div>
+				<div class="class_entry"><a href="SoundManager.html">SoundManager</a></div>
+				<div class="class_entry"><a href="String.html">String</a></div>
+				<div class="class_entry"><a href="Texture.html">Texture</a></div>
+				<div class="class_entry"><a href="Timer.html">Timer</a></div>
+				<div class="class_entry"><a href="TimerManager.html">TimerManager</a></div>
+				<div class="class_entry"><a href="Vector2.html">Vector2</a></div>
+				<div class="class_entry"><a href="Vector3.html">Vector3</a></div>
+				<div class="class_entry"><a href="Vertex.html">Vertex</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">Image</div>
+					<div class="class_desc"> An image in memory. Basic RGB or RGBA images stored in memory. Can be loaded from PNG files, created into textures and written to file.</div>
+					<div class="class_desc">NOTE: Image instances are not automatically garbage collected.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">Image.IMAGE_RGB <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Image.IMAGE_RGBA <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Image.IMAGE_FP16 <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Static Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Image.BlankImage ( <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ) </div>
+								<div class="class_method_type">Image</div>
+								<div class="class_method_desc"> Create a blank image of specified size and type. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Width of the image to create.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Height of the image to create.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Type of image to create. Can be IMAGE_RGBA or IMAGE_RGB.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Image ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Create image from file name. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to image file to load.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">loadImage ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Load an image from a file </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to image file to load.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">loadPNG ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">saveImage ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Saves the image to a file. Currently only PNG files are supported. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to image file to load.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">savePNG ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">pasteImage ( <span class="inline_type">Image</span> <span class="inline_param">image</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">blendingMode</span> ,  <span class="inline_type">Number</span> <span class="inline_param">blendAmount</span> ,  <span class="inline_type">Color</span> <span class="inline_param">blendColor</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Pastes another image into the image  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">image</div>
+									<div class="class_method_param_type">Image</div>
+									<div class="class_method_param_desc">Image to paste</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">X position of new image within the image</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Y position of new image within the image</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blendingMode</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Blending mode to use. Currently not used.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blendAmount</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blendColor</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createEmpty ( <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Recreate the image as an empty image of specified size. The image type stays the same. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Width of the image to create.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Height of the image to create.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">fill ( <span class="inline_type">Color</span> <span class="inline_param">color</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Fills the image with the specified color values. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">The color to fill it with.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setPixel ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ,  <span class="inline_type">Number</span> <span class="inline_param">r</span> ,  <span class="inline_type">Number</span> <span class="inline_param">g</span> ,  <span class="inline_type">Number</span> <span class="inline_param">b</span> ,  <span class="inline_type">Number</span> <span class="inline_param">a</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets a pixel at specified coordinates to specified color. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">X position of pixel.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Y position of pixel.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">r</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Red value 0-1.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">g</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Green value 0-1</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">b</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Blue value 0-1</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">a</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Alpha value 0-1</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPixel ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">Color</div>
+								<div class="class_method_desc"> Returns the pixel color at specified position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">X position of pixel.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Y position of pixel.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">swap ( <span class="inline_type">Integer</span> <span class="inline_param">v1</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">v2</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">v1</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">v2</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawLine ( <span class="inline_type">Integer</span> <span class="inline_param">x0</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y0</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">x1</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y1</span> ,  <span class="inline_type">Color</span> <span class="inline_param">col</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Draws a line with specified color. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x0</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Starting x position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y0</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Starting y position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x1</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Ending x position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y1</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Ending y position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">col</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">Color to use.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">moveBrushTo ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Moves brush to specified position </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New brush position X</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New brush position Y</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">moveBrush ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Translates brush a specified amount relative to its current position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Amount to translate on X axis</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Amount to translate on Y axis</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">drawLineTo ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ,  <span class="inline_type">Color</span> <span class="inline_param">col</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Draws a line to specified position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Ending x position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Ending y position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">col</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">Color to use.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">fillRect ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">w</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">h</span> ,  <span class="inline_type">Color</span> <span class="inline_param">col</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Draws a rectangle with specified color. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Rectangle x position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Rectangle y position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Rectangle width.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Rectangle height.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">col</div>
+									<div class="class_method_param_type">Color</div>
+									<div class="class_method_param_desc">Color to use.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">perlinNoise ( <span class="inline_type">Integer</span> <span class="inline_param">seed</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">alpha</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Draws perlin noise in the image </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">seed</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Seed for the noise</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">alpha</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If true, affects alpha, if false only affects the color.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">fastBlur ( <span class="inline_type">Integer</span> <span class="inline_param">blurSize</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Blurs the image  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blurSize</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Size of the blur in pixels.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">fastBlurVert ( <span class="inline_type">Integer</span> <span class="inline_param">blurSize</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blurSize</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">fastBlurHor ( <span class="inline_type">Integer</span> <span class="inline_param">blurSize</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">blurSize</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">gaussianBlur ( <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Number</span> <span class="inline_param">deviation</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Blurs the image  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radius of the blur</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">deviation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Standard deviation of the gaussian distribution</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createKernel ( <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Number</span> <span class="inline_param">deviation</span> ) </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">deviation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">darken ( <span class="inline_type">Number</span> <span class="inline_param">amt</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">color</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">alpha</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amt</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">alpha</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">lighten ( <span class="inline_type">Number</span> <span class="inline_param">amt</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">color</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">alpha</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amt</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">alpha</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">multiply ( <span class="inline_type">Number</span> <span class="inline_param">amt</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">color</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">alpha</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amt</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">color</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">alpha</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPixelsInRect ( <span class="inline_type">Integer</span> <span class="inline_param">x</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">y</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">width</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">char</div>
+								<div class="class_method_desc"> Returns an area of the image buffer. The area can go outside of image bounds, in which case the pixels not within the image are zeroed out. This method allocates new memory for the returned buffer and you must free it manually. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">X position of the area to return.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Y position of the area to return.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Width of the area to return.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Height of the area to return.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getImagePart ( <span class="inline_type">Rectangle</span> <span class="inline_param">subRect</span> ) </div>
+								<div class="class_method_type">Image</div>
+								<div class="class_method_desc"> Returns a copy of the specified subRect part of the image. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">subRect</div>
+									<div class="class_method_param_type">Rectangle</div>
+									<div class="class_method_param_desc">The part of the image to copy. (0, 0) refers to the top left of the image.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getBrushX () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the x position of the brush.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getBrushY () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the y position of the brush.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isLoaded () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getType () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">writeBMP ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getWidth () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the width of the image.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getHeight () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the height of the image.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPixels () </div>
+								<div class="class_method_type">char</div>
+								<div class="class_method_desc"> Returns the raw image data </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">premultiplyAlpha () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+				</div>

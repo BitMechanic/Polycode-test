@@ -1,0 +1,227 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="UIBox.html">UIBox</a></div>
+				<div class="class_entry"><a href="UIButton.html">UIButton</a></div>
+				<div class="class_entry"><a href="UICheckBox.html">UICheckBox</a></div>
+				<div class="class_entry"><a href="UIColorPicker.html">UIColorPicker</a></div>
+				<div class="class_entry"><a href="UIColorBox.html">UIColorBox</a></div>
+				<div class="class_entry"><a href="UIComboBoxItem.html">UIComboBoxItem</a></div>
+				<div class="class_entry"><a href="UIComboBox.html">UIComboBox</a></div>
+				<div class="class_entry"><a href="UIElement.html">UIElement</a></div>
+				<div class="class_entry"><a href="UIEvent.html">UIEvent</a></div>
+				<div class="class_entry"><a href="UIFileDialog.html">UIFileDialog</a></div>
+				<div class="class_entry"><a href="UIFileDialogEntry.html">UIFileDialogEntry</a></div>
+				<div class="class_entry"><a href="CreateFolderWindow.html">CreateFolderWindow</a></div>
+				<div class="class_entry"><a href="UIHScrollBar.html">UIHScrollBar</a></div>
+				<div class="class_entry"><a href="UIHSizer.html">UIHSizer</a></div>
+				<div class="class_entry"><a href="UIHSlider.html">UIHSlider</a></div>
+				<div class="class_entry"><a href="UIImageButton.html">UIImageButton</a></div>
+				<div class="class_entry"><a href="UIMenuItem.html">UIMenuItem</a></div>
+				<div class="class_entry"><a href="UIMenu.html">UIMenu</a></div>
+				<div class="class_entry"><a href="UIGlobalMenu.html">UIGlobalMenu</a></div>
+				<div class="class_entry"><a href="UIMenuDivider.html">UIMenuDivider</a></div>
+				<div class="class_entry"><a href="UIMenuBarEntry.html">UIMenuBarEntry</a></div>
+				<div class="class_entry"><a href="UIMenuBarEntryItem.html">UIMenuBarEntryItem</a></div>
+				<div class="class_entry"><a href="UIMenuBar.html">UIMenuBar</a></div>
+				<div class="class_entry"><a href="UIScrollContainer.html">UIScrollContainer</a></div>
+				<div class="class_entry"><a href="SyntaxHighlightToken.html">SyntaxHighlightToken</a></div>
+				<div class="class_entry"><a href="LineColorData.html">LineColorData</a></div>
+				<div class="class_entry"><a href="UITextInput.html">UITextInput</a></div>
+				<div class="class_entry"><a href="UITree.html">UITree</a></div>
+				<div class="class_entry"><a href="UITreeContainer.html">UITreeContainer</a></div>
+				<div class="class_entry"><a href="UITreeEvent.html">UITreeEvent</a></div>
+				<div class="class_entry"><a href="UIVScrollBar.html">UIVScrollBar</a></div>
+				<div class="class_entry"><a href="UIVSizer.html">UIVSizer</a></div>
+				<div class="class_entry"><a href="UIWindow.html">UIWindow</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">UIScrollContainer <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../UI/UIElement.html">UIElement</a></span></div>
+					<div class="class_desc"> A container for UI elements that adds scroll bars if necessary. Internally, this class simply moves the scrolled child, and uses scissorBox to cut off the parts going over the edges.</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">UIScrollContainer ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">scrolledEntity</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">hScroll</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">vScroll</span> ,  <span class="inline_type">Number</span> <span class="inline_param">width</span> ,  <span class="inline_type">Number</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Create a scroll container. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">scrolledEntity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">The ScreenEntity that should be scrolled</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">hScroll</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Whether the child should be scrolled horizontally.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">vScroll</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Whether the child should be scrolled vertically.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">The width of the scroll container.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">The height of the scroll container.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setContentSize ( <span class="inline_type">Number</span> <span class="inline_param">newContentWidth</span> ,  <span class="inline_type">Number</span> <span class="inline_param">newContentHeight</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Update what size the content child is expected to have. This doesn't do anything to the child, it just updates scroll bar positions etc. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newContentWidth</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Width of the content.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newContentHeight</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Height of the content.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Resize ( <span class="inline_type">Number</span> <span class="inline_param">width</span> ,  <span class="inline_type">Number</span> <span class="inline_param">height</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">width</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setScrollValue ( <span class="inline_type">Number</span> <span class="inline_param">xScroll</span> ,  <span class="inline_type">Number</span> <span class="inline_param">yScroll</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set how far the content child should be scrolled. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">xScroll</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New horizontal scroll position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">yScroll</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New vertical scroll position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">scrollVertical ( <span class="inline_type">Number</span> <span class="inline_param">amount</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set how far the content child should be scrolled. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amount</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New vertical scroll position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">scrollHorizontal ( <span class="inline_type">Number</span> <span class="inline_param">amount</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Set how far the content child should be scrolled. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">amount</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New horizontal scroll position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getContentSize () </div>
+								<div class="class_method_type">Vector2</div>
+								<div class="class_method_desc"> Get the assumed size of the content. Note that this doesn't actually look at the contained element, but rather just returns what was earlier set by setContentSize() </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseWheelDown ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">onMouseWheelUp ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVScrollWidth () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Get the width of the vertical scroll bar.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVScrollBar () </div>
+								<div class="class_method_type">UIVScrollBar</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getHScrollBar () </div>
+								<div class="class_method_type">UIHScrollBar</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+				</div>

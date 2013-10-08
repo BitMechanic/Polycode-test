@@ -1,0 +1,796 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="PhysicsScreen.html">PhysicsScreen</a></div>
+				<div class="class_entry"><a href="PhysicsJoint.html">PhysicsJoint</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEvent.html">PhysicsScreenEvent</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEntity.html">PhysicsScreenEntity</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">PhysicsScreen <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Polycode/Screen.html">Screen</a></span></div>
+					<div class="class_desc"> A 2D Physics enabled screen. A PhysicsScreen acts like a normal screen, except that entities added to it with addPhysicsChild have physics automatically simulated. You can also use it to check collisions </div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">PhysicsScreen ( <span class="inline_type">Number</span> <span class="inline_param">worldScale</span> ,  <span class="inline_type">Number</span> <span class="inline_param">freq</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">velIterations</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">posIterations</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a new physics screen.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">worldScale</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">freq</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">velIterations</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">posIterations</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addPhysicsChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">entType</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">isStatic</span> ,  <span class="inline_type">Number</span> <span class="inline_param">friction</span> ,  <span class="inline_type">Number</span> <span class="inline_param">density</span> ,  <span class="inline_type">Number</span> <span class="inline_param">restitution</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">isSensor</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">fixedRotation</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">groupIndex</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc"> Adds a ScreenEntity as a physics enabled child. Once an entity is added as a physics child, its transforms are set by the physics engine and you are not able to position it manually. Use addCollisionChild/trackCollisionChild to track collisions of entities that you can position manually. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Screen entity to add.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Physics entity type to add as. Possible values are PhysicsScreenEntity.ENTITY_RECT, PhysicsScreenEntity.ENTITY_CIRCLE and PhysicsScreenEntity.ENTITY_MESH. If the type is ENTITY_MESH, the ScreenEntity passed must be a ScreenMesh!</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">isStatic</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this parameter is true, the body is static (doesn't move on its own).</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">friction</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Friction of the physics entity. Friction controls how entities drag along each other.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">density</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Density of the physics entity. Density controls how heavy the entity is.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">restitution</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Restitution of the physics entity. Restitution controls how bouncy the entity is.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">isSensor</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this is set to true, the entity won't collide with other entities, but its collision will register.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fixedRotation</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this is set to true, the entity will always have a locked rotation.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">groupIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">is the physiscs shape's collision group. A negative number means objects of that group won't collide with eachother</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">trackPhysicsChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">entType</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">isStatic</span> ,  <span class="inline_type">Number</span> <span class="inline_param">friction</span> ,  <span class="inline_type">Number</span> <span class="inline_param">density</span> ,  <span class="inline_type">Number</span> <span class="inline_param">restitution</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">isSensor</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">fixedRotation</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">groupIndex</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc"> Tracks a ScreenEntity as a physics enabled child. Once an entity is added as a physics child, its transforms are set by the physics engine and you are not able to position it manually. Use addCollisionChild/trackCollisionChild to track collisions of entities that you can position manually. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Screen entity to add.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Physics entity type to add as. Possible values are PhysicsScreenEntity.ENTITY_RECT, PhysicsScreenEntity.ENTITY_CIRCLE and PhysicsScreenEntity.ENTITY_MESH. If the type is ENTITY_MESH, the ScreenEntity passed must be a ScreenMesh!</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">isStatic</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this parameter is true, the body is static (doesn't move on its own).</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">friction</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Friction of the physics entity. Friction controls how entities drag along each other.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">density</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Density of the physics entity. Density controls how heavy the entity is.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">restitution</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Restitution of the physics entity. Restitution controls how bouncy the entity is.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">isSensor</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this is set to true, the entity won't collide with other entities, but its collision will register.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fixedRotation</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If this is set to true, the entity will always have a locked rotation.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">groupIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">is the physiscs shape's collision group. A negative number means objects of that group won't collide with eachother</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">stopTrackingChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">entity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Stops physics tracking for this entity but does not remove from screen. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to stop tracking for.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removePhysicsChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">entityToRemove</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Removes a physics child from the screen. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entityToRemove</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to remove from the screen.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removeChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">entityToRemove</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entityToRemove</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addCollisionChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">entType</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">groupIndex</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">sensorOnly</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc"> Begins tracking collisions for a ScreenEntity and adds it to the scene. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to track collisions for.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Physics shape of the entity. Possible values are PhysicsScreenEntity.ENTITY_RECT or PhysicsScreenEntity.ENTITY_CIRCLE.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">groupIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Entity to remove from the screen.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">sensorOnly</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">trackCollisionChild ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">entType</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">groupIndex</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc"> Begins tracking collisions for a ScreenEntity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to track collisions for.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Physics shape of the entity. Possible values are PhysicsScreenEntity.ENTITY_RECT or PhysicsScreenEntity.ENTITY_CIRCLE.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">groupIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Entity to remove from the screen.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">destroyJoint ( <span class="inline_type">PhysicsJoInteger</span> <span class="inline_param">joint</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Removes an existing joint. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">joint</div>
+									<div class="class_method_param_type">PhysicsJoInteger</div>
+									<div class="class_method_param_desc">Joint to remove.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createDistanceJoint ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent1</span> ,  <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent2</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">collideConnected</span> ) </div>
+								<div class="class_method_type">PhysicsJoInteger</div>
+								<div class="class_method_desc"> Creates a new distance joint. Distance joints keep the two entities at a fixed distance. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">First entity to join.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent2</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Second entity to join.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">collideConnected</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If set to true, both entities will collide with each other, if false, they will not.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createPrismaticJoint ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent1</span> ,  <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent2</span> ,  <span class="inline_type">Vector2</span> <span class="inline_param">worldAxis</span> ,  <span class="inline_type">Number</span> <span class="inline_param">ax</span> ,  <span class="inline_type">Number</span> <span class="inline_param">ay</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">collideConnected</span> ,  <span class="inline_type">Number</span> <span class="inline_param">lowerTranslation</span> ,  <span class="inline_type">Number</span> <span class="inline_param">upperTranslation</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">enableLimit</span> ,  <span class="inline_type">Number</span> <span class="inline_param">motorSpeed</span> ,  <span class="inline_type">Number</span> <span class="inline_param">motorForce</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">motorEnabled</span> ) </div>
+								<div class="class_method_type">PhysicsJoInteger</div>
+								<div class="class_method_desc"> Creates a new prismatic joint. Prismatic joints provide one degree of freedom between two entities.  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">First entity to join.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent2</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Second entity to join.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">worldAxis</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">If set to true, both entities will collide with each other, if false, they will not.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ax</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Anchor point x (relative to first entity)</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ay</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Anchor point y (relative to first entity)</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">collideConnected</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If true, the rotation will be limited to the specified values</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">lowerTranslation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If enableLimit is true, specifies the lower translation limit.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">upperTranslation</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If enableLimit is true, specifies the upper translation limit.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">enableLimit</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If enabled, applies a constant motor to the rotation joint.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">motorSpeed</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If motorEnabled is true, controls the speed at which the motor rotates.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">motorForce</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">motorEnabled is true, specifies the maximum force applied.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">motorEnabled</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Specifies the relative world axis for the prismatic joint.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createRevoluteJoint ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent1</span> ,  <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent2</span> ,  <span class="inline_type">Number</span> <span class="inline_param">ax</span> ,  <span class="inline_type">Number</span> <span class="inline_param">ay</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">collideConnected</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">enableLimit</span> ,  <span class="inline_type">Number</span> <span class="inline_param">lowerLimit</span> ,  <span class="inline_type">Number</span> <span class="inline_param">upperLimit</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">motorEnabled</span> ,  <span class="inline_type">Number</span> <span class="inline_param">motorSpeed</span> ,  <span class="inline_type">Number</span> <span class="inline_param">maxTorque</span> ) </div>
+								<div class="class_method_type">PhysicsJoInteger</div>
+								<div class="class_method_desc"> Creates a new revolute joint. Revolute joints enable one entity to rotate around a point on another entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to anchor to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent2</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to anchor.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ax</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Anchor point x (relative to first entity)</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ay</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Anchor point y (relative to first entity)</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">collideConnected</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If true, the rotation will be limited to the specified values</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">enableLimit</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If enableLimit is true, specifies the lower limit of the rotation in degrees.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">lowerLimit</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If enableLimit is true, specifies the upper limit of the rotation in degrees.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">upperLimit</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If enabled, applies a constant torque to the rotation joint.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">motorEnabled</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If motorEnabled is true, controls the speed at which the motor rotates.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">motorSpeed</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">motorEnabled is true, specifies the maximum torque applied.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">maxTorque</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyForce ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Applies linear force to an entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to apply force to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X value of the force direction vector.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y value of the force direction vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">applyImpulse ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Applies an impulse to an entity </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to apply force to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X value of the impulse direction vector.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y value of the impulse direction vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setGravity ( <span class="inline_type">Vector2</span> <span class="inline_param">newGravity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the gravity for this screen. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newGravity</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">The new gravity vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setTransform ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Vector2</span> <span class="inline_param">pos</span> ,  <span class="inline_type">Number</span> <span class="inline_param">angle</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Warps an entity to the specified location and angle. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to transform.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">pos</div>
+									<div class="class_method_param_type">Vector2</div>
+									<div class="class_method_param_desc">New position to set.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">angle</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">New angle to set.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPhysicsEntityByShape ( <span class="inline_type">b2Shape</span> <span class="inline_param">shape</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">shape</div>
+									<div class="class_method_param_type">b2Shape</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPhysicsEntityByFixture ( <span class="inline_type">b2Fixture</span> <span class="inline_param">fixture</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fixture</div>
+									<div class="class_method_param_type">b2Fixture</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocity ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fx</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the linear velocity of an entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to set velocity to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X direction of velocity vector.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y direction of velocity vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocityX ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fx</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the linear velocity of an entity on the X axis. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to set velocity to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fx</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X direction of velocity vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVelocityY ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">fy</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the linear velocity of an entity on the Y axis. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to set velocity to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fy</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y direction of velocity vector.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setAngularVelocity ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">spin</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the angular velocity of an entity </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to apply spin to.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">spin</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Spin value.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVelocity ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ) </div>
+								<div class="class_method_type">Vector2</div>
+								<div class="class_method_desc"> Returns the velocity of an entity. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to return velocity for</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">BeginContact ( <span class="inline_type">b2Contact</span> <span class="inline_param">contact</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">contact</div>
+									<div class="class_method_param_type">b2Contact</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">EndContact ( <span class="inline_type">b2Contact</span> <span class="inline_param">contact</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">contact</div>
+									<div class="class_method_param_type">b2Contact</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">PreSolve ( <span class="inline_type">b2Contact</span> <span class="inline_param">contact</span> ,  <span class="inline_type">b2Manifold</span> <span class="inline_param">oldManifold</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">contact</div>
+									<div class="class_method_param_type">b2Contact</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">oldManifold</div>
+									<div class="class_method_param_type">b2Manifold</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">PostSolve ( <span class="inline_type">b2Contact</span> <span class="inline_param">contact</span> ,  <span class="inline_type">b2ContactImpulse</span> <span class="inline_param">impulse</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">contact</div>
+									<div class="class_method_param_type">b2Contact</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">impulse</div>
+									<div class="class_method_param_type">b2ContactImpulse</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">wakeUp ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Wake up a sleeping entity. The physics engine puts non-moving entities to sleep automatically. Use this to wake them up. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to wake up.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getEntityAtPosition ( <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> Returns the entity at the specified position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">testEntityAtPosition ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ,  <span class="inline_type">Number</span> <span class="inline_param">x</span> ,  <span class="inline_type">Number</span> <span class="inline_param">y</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Returns true if the specified entity is at the specified position. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">Entity to test.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">x</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">X position.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">y</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Y position.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">testEntityCollision ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent1</span> ,  <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent2</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Tests collision between two entities</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent2</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">isEntityColliding ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent1</span> ) </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Shutdown () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPhysicsByScreenEntity ( <span class="inline_type">ScreenEntity</span> <span class="inline_param">ent</span> ) </div>
+								<div class="class_method_type">PhysicsScreenEntity</div>
+								<div class="class_method_desc"> Returns the physics entity for the specified screen entity. When you add ScreenEntities to the physics screen, these physics entities are created to track the physics status of the screen entities. You don't need to deal with these ever, but if you want, you can get them anyway. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">ScreenEntity</div>
+									<div class="class_method_param_desc">ScreenEntity instance to return the physics entity for.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">destroyMouseJoint ( <span class="inline_type">b2MouseJoInteger</span> <span class="inline_param">mJoint</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">mJoint</div>
+									<div class="class_method_param_type">b2MouseJoInteger</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

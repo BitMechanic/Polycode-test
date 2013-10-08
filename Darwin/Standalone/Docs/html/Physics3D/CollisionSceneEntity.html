@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="CollisionScene.html">CollisionScene</a></div>
+				<div class="class_entry"><a href="CollisionSceneEntity.html">CollisionSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsScene.html">PhysicsScene</a></div>
+				<div class="class_entry"><a href="PhysicsHingeConstraint.html">PhysicsHingeConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEvent.html">PhysicsSceneEvent</a></div>
+				<div class="class_entry"><a href="PhysicsGenericConstraint.html">PhysicsGenericConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEntity.html">PhysicsSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsCharacter.html">PhysicsCharacter</a></div>
+				<div class="class_entry"><a href="PhysicsVehicle.html">PhysicsVehicle</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">CollisionSceneEntity</div>
+					<div class="class_desc"> A wrapped around SceneEntity that provides collision information.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_BOX <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Box shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_TERRAIN <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Terrain shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_SPHERE <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Sphere shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_MESH <span class="static_value">= 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Mesh shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.CHARACTER_CONTROLLER <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Character controller shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_CAPSULE <span class="static_value">= 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Capsule shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_PLANE <span class="static_value">= 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Plane shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_CONE <span class="static_value">= 7</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Cone shape</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">CollisionSceneEntity.SHAPE_CYLINDER <span class="static_value">= 8</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Cylinder shape</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">collisionObject</div>
+								<div class="class_property_type">btCollisionObject</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">lastPosition</div>
+								<div class="class_property_type">Vector3</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">enabled</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">shape</div>
+								<div class="class_property_type">btCollisionShape</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">CollisionSceneEntity ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">compoundChildren</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Main constructor.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">compoundChildren</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getSceneEntity () </div>
+								<div class="class_method_type">SceneEntity</div>
+								<div class="class_method_desc"> @name Collision scene entity  Public methods</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getType () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getConvexShape () </div>
+								<div class="class_method_type">btConvexShape</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createCollisionShape ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ) </div>
+								<div class="class_method_type">btCollisionShape</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

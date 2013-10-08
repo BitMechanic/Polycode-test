@@ -1,0 +1,271 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="CollisionScene.html">CollisionScene</a></div>
+				<div class="class_entry"><a href="CollisionSceneEntity.html">CollisionSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsScene.html">PhysicsScene</a></div>
+				<div class="class_entry"><a href="PhysicsHingeConstraint.html">PhysicsHingeConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEvent.html">PhysicsSceneEvent</a></div>
+				<div class="class_entry"><a href="PhysicsGenericConstraint.html">PhysicsGenericConstraint</a></div>
+				<div class="class_entry"><a href="PhysicsSceneEntity.html">PhysicsSceneEntity</a></div>
+				<div class="class_entry"><a href="PhysicsCharacter.html">PhysicsCharacter</a></div>
+				<div class="class_entry"><a href="PhysicsVehicle.html">PhysicsVehicle</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">CollisionScene <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Polycode/Scene.html">Scene</a></span></div>
+					<div class="class_desc"> A scene that tracks collisions between entities. The collision scene acts like a regular scene, only it automatically tracks collisions between its child entities.</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">CollisionScene ( <span class="inline_type">Vector3</span> <span class="inline_param">size</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">virtualScene</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">deferInitCollision</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a collision scene.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">size</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">virtualScene</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">deferInitCollision</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">initCollisionScene ( <span class="inline_type">Vector3</span> <span class="inline_param">size</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">size</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">Update () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removeEntity ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getCollisionEntityByObject ( <span class="inline_type">btCollisionObject</span> <span class="inline_param">collisionObject</span> ) </div>
+								<div class="class_method_type">CollisionSceneEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">collisionObject</div>
+									<div class="class_method_param_type">btCollisionObject</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getFirstEntityInRay ( <span class="inline_type">Vector3</span> <span class="inline_param">origin</span> ,  <span class="inline_type">Vector3</span> <span class="inline_param">dest</span> ) </div>
+								<div class="class_method_type">RayTestResult</div>
+								<div class="class_method_desc"> @name Collision scene  Public methods</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">origin</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">dest</div>
+									<div class="class_method_param_type">Vector3</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">enableCollision ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getCollisionByScreenEntity ( <span class="inline_type">SceneEntity</span> <span class="inline_param">ent</span> ) </div>
+								<div class="class_method_type">CollisionSceneEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">testCollision ( <span class="inline_type">SceneEntity</span> <span class="inline_param">ent1</span> ,  <span class="inline_type">SceneEntity</span> <span class="inline_param">ent2</span> ) </div>
+								<div class="class_method_type">CollisionResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent1</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">ent2</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">testCollisionOnCollisionChild ( <span class="inline_type">CollisionSceneEntity</span> <span class="inline_param">cEnt1</span> ,  <span class="inline_type">CollisionSceneEntity</span> <span class="inline_param">cEnt2</span> ) </div>
+								<div class="class_method_type">CollisionResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cEnt1</div>
+									<div class="class_method_param_type">CollisionSceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cEnt2</div>
+									<div class="class_method_param_type">CollisionSceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">testCollisionOnCollisionChild_Convex ( <span class="inline_type">CollisionSceneEntity</span> <span class="inline_param">cEnt1</span> ,  <span class="inline_type">CollisionSceneEntity</span> <span class="inline_param">cEnt2</span> ) </div>
+								<div class="class_method_type">CollisionResult</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cEnt1</div>
+									<div class="class_method_param_type">CollisionSceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">cEnt2</div>
+									<div class="class_method_param_type">CollisionSceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addCollisionChild ( <span class="inline_type">SceneEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">group</span> ) </div>
+								<div class="class_method_type">CollisionSceneEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">group</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">trackCollision ( <span class="inline_type">SceneEntity</span> <span class="inline_param">newEntity</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">type</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">group</span> ) </div>
+								<div class="class_method_type">CollisionSceneEntity</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newEntity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">type</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">group</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">removeCollision ( <span class="inline_type">SceneEntity</span> <span class="inline_param">entity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">entity</div>
+									<div class="class_method_param_type">SceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">adjustForCollision ( <span class="inline_type">CollisionSceneEntity</span> <span class="inline_param">collisionEntity</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">collisionEntity</div>
+									<div class="class_method_param_type">CollisionSceneEntity</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

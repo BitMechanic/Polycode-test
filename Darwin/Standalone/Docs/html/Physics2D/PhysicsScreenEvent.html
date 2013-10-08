@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="PhysicsScreen.html">PhysicsScreen</a></div>
+				<div class="class_entry"><a href="PhysicsJoint.html">PhysicsJoint</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEvent.html">PhysicsScreenEvent</a></div>
+				<div class="class_entry"><a href="PhysicsScreenEntity.html">PhysicsScreenEntity</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">PhysicsScreenEvent <span class="class_extends">extends</span> <span class="class_extends_class"><a href="../Polycode/Event.html">Event</a></span></div>
+					<div class="class_desc"> Event sent out by the PhysicsScreen class when collisions begin and end.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEvent.EVENTBASE_PHYSICSSCREENEVENT <span class="static_value">= 0x800</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc">No description.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEvent.EVENT_NEW_SHAPE_COLLISION <span class="static_value">= EVENTBASE_PHYSICSSCREENEVENT + 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Event sent out when a collision begins</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEvent.EVENT_END_SHAPE_COLLISION <span class="static_value">= EVENTBASE_PHYSICSSCREENEVENT + 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Event sent out when a collision ends</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">PhysicsScreenEvent.EVENT_SOLVE_SHAPE_COLLISION <span class="static_value">= EVENTBASE_PHYSICSSCREENEVENT + 3</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Event sent out when a collision begins</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">entity1</div>
+								<div class="class_property_type">ScreenEntity</div>
+								<div class="class_property_desc"> First colliding entity.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">entity2</div>
+								<div class="class_property_type">ScreenEntity</div>
+								<div class="class_property_desc"> Second colliding entity.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">localCollisionNormal</div>
+								<div class="class_property_type">Vector2</div>
+								<div class="class_property_desc"> Local collision normal.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">worldCollisionNormal</div>
+								<div class="class_property_type">Vector2</div>
+								<div class="class_property_desc"> Collision normal in world space</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">localCollisionPoint</div>
+								<div class="class_property_type">Vector2</div>
+								<div class="class_property_desc"> Collision point in local space</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">worldCollisionPoint</div>
+								<div class="class_property_type">Vector2</div>
+								<div class="class_property_desc"> Collision point in world space</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">impactStrength</div>
+								<div class="class_property_type">Number</div>
+								<div class="class_property_desc"> Strength of the collision impact.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">frictionStrength</div>
+								<div class="class_property_type">Number</div>
+								<div class="class_property_desc"> Friction strength of the impact</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">PhysicsScreenEvent () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getFirstEntity () </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> First colliding entity.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getSecondEntity () </div>
+								<div class="class_method_type">ScreenEntity</div>
+								<div class="class_method_desc"> Second colliding entity.</div>
+							</div>
+						</div>
+					</div>
+				</div>

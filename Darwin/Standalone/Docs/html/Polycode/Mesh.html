@@ -1,0 +1,553 @@
+<html>
+	<head>
+		<title>Polycode Documentation</title>
+		<link rel="stylesheet" type="text/css" href="../css/docs.css" />
+		<script type="text/javascript" src="js/docs.js"></script>	</head>
+	<body>
+		<div id="global_header"><a href="../index.html"><img border="0" src="../images/docs_header.png"/></a></div>
+		<div id="content">
+			<div id="class_list">
+				<div class="class_entry"><a href="BezierCurve.html">BezierCurve</a></div>
+				<div class="class_entry"><a href="Bone.html">Bone</a></div>
+				<div class="class_entry"><a href="Camera.html">Camera</a></div>
+				<div class="class_entry"><a href="Color.html">Color</a></div>
+				<div class="class_entry"><a href="Config.html">Config</a></div>
+				<div class="class_entry"><a href="PolycodeViewBase.html">PolycodeViewBase</a></div>
+				<div class="class_entry"><a href="Core.html">Core</a></div>
+				<div class="class_entry"><a href="CoreInput.html">CoreInput</a></div>
+				<div class="class_entry"><a href="CoreServices.html">CoreServices</a></div>
+				<div class="class_entry"><a href="Cubemap.html">Cubemap</a></div>
+				<div class="class_entry"><a href="Data.html">Data</a></div>
+				<div class="class_entry"><a href="Rotation.html">Rotation</a></div>
+				<div class="class_entry"><a href="Entity.html">Entity</a></div>
+				<div class="class_entry"><a href="Event.html">Event</a></div>
+				<div class="class_entry"><a href="EventDispatcher.html">EventDispatcher</a></div>
+				<div class="class_entry"><a href="EventHandler.html">EventHandler</a></div>
+				<div class="class_entry"><a href="FixedShader.html">FixedShader</a></div>
+				<div class="class_entry"><a href="FixedShaderBinding.html">FixedShaderBinding</a></div>
+				<div class="class_entry"><a href="Font.html">Font</a></div>
+				<div class="class_entry"><a href="FontManager.html">FontManager</a></div>
+				<div class="class_entry"><a href="Image.html">Image</a></div>
+				<div class="class_entry"><a href="InputEvent.html">InputEvent</a></div>
+				<div class="class_entry"><a href="GlyphData.html">GlyphData</a></div>
+				<div class="class_entry"><a href="Label.html">Label</a></div>
+				<div class="class_entry"><a href="Material.html">Material</a></div>
+				<div class="class_entry"><a href="MaterialManager.html">MaterialManager</a></div>
+				<div class="class_entry"><a href="Matrix4.html">Matrix4</a></div>
+				<div class="class_entry"><a href="Mesh.html">Mesh</a></div>
+				<div class="class_entry"><a href="VertexBuffer.html">VertexBuffer</a></div>
+				<div class="class_entry"><a href="PolycodeModule.html">PolycodeModule</a></div>
+				<div class="class_entry"><a href="ObjectEntry.html">ObjectEntry</a></div>
+				<div class="class_entry"><a href="BinaryObjectReader.html">BinaryObjectReader</a></div>
+				<div class="class_entry"><a href="BinaryObjectWriter.html">BinaryObjectWriter</a></div>
+				<div class="class_entry"><a href="Particle.html">Particle</a></div>
+				<div class="class_entry"><a href="ScreenParticleEmitter.html">ScreenParticleEmitter</a></div>
+				<div class="class_entry"><a href="SceneParticleEmitter.html">SceneParticleEmitter</a></div>
+				<div class="class_entry"><a href="ParticleEmitter.html">ParticleEmitter</a></div>
+				<div class="class_entry"><a href="Perlin.html">Perlin</a></div>
+				<div class="class_entry"><a href="Polygon.html">Polygon</a></div>
+				<div class="class_entry"><a href="Quaternion.html">Quaternion</a></div>
+				<div class="class_entry"><a href="QuaternionCurve.html">QuaternionCurve</a></div>
+				<div class="class_entry"><a href="Rectangle.html">Rectangle</a></div>
+				<div class="class_entry"><a href="Renderer.html">Renderer</a></div>
+				<div class="class_entry"><a href="Resource.html">Resource</a></div>
+				<div class="class_entry"><a href="ResourceManager.html">ResourceManager</a></div>
+				<div class="class_entry"><a href="Scene.html">Scene</a></div>
+				<div class="class_entry"><a href="SceneEntity.html">SceneEntity</a></div>
+				<div class="class_entry"><a href="SceneLabel.html">SceneLabel</a></div>
+				<div class="class_entry"><a href="SceneLight.html">SceneLight</a></div>
+				<div class="class_entry"><a href="SceneLine.html">SceneLine</a></div>
+				<div class="class_entry"><a href="SceneManager.html">SceneManager</a></div>
+				<div class="class_entry"><a href="SceneMesh.html">SceneMesh</a></div>
+				<div class="class_entry"><a href="ScenePrimitive.html">ScenePrimitive</a></div>
+				<div class="class_entry"><a href="SceneRenderTexture.html">SceneRenderTexture</a></div>
+				<div class="class_entry"><a href="SceneSound.html">SceneSound</a></div>
+				<div class="class_entry"><a href="SceneSoundListener.html">SceneSoundListener</a></div>
+				<div class="class_entry"><a href="Screen.html">Screen</a></div>
+				<div class="class_entry"><a href="ScreenEntity.html">ScreenEntity</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstance.html">ScreenEntityInstance</a></div>
+				<div class="class_entry"><a href="ScreenEntityInstanceResourceEntry.html">ScreenEntityInstanceResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenEvent.html">ScreenEvent</a></div>
+				<div class="class_entry"><a href="ScreenImage.html">ScreenImage</a></div>
+				<div class="class_entry"><a href="ScreenLabel.html">ScreenLabel</a></div>
+				<div class="class_entry"><a href="ScreenLine.html">ScreenLine</a></div>
+				<div class="class_entry"><a href="ScreenManager.html">ScreenManager</a></div>
+				<div class="class_entry"><a href="ScreenMesh.html">ScreenMesh</a></div>
+				<div class="class_entry"><a href="ScreenShape.html">ScreenShape</a></div>
+				<div class="class_entry"><a href="ScreenSoundListener.html">ScreenSoundListener</a></div>
+				<div class="class_entry"><a href="ScreenSound.html">ScreenSound</a></div>
+				<div class="class_entry"><a href="ScreenSpriteResourceEntry.html">ScreenSpriteResourceEntry</a></div>
+				<div class="class_entry"><a href="ScreenSprite.html">ScreenSprite</a></div>
+				<div class="class_entry"><a href="Shader.html">Shader</a></div>
+				<div class="class_entry"><a href="LocalShaderParam.html">LocalShaderParam</a></div>
+				<div class="class_entry"><a href="ShaderProgram.html">ShaderProgram</a></div>
+				<div class="class_entry"><a href="ShaderBinding.html">ShaderBinding</a></div>
+				<div class="class_entry"><a href="SkeletonAnimation.html">SkeletonAnimation</a></div>
+				<div class="class_entry"><a href="Skeleton.html">Skeleton</a></div>
+				<div class="class_entry"><a href="BoneTrack.html">BoneTrack</a></div>
+				<div class="class_entry"><a href="Sound.html">Sound</a></div>
+				<div class="class_entry"><a href="SoundManager.html">SoundManager</a></div>
+				<div class="class_entry"><a href="String.html">String</a></div>
+				<div class="class_entry"><a href="Texture.html">Texture</a></div>
+				<div class="class_entry"><a href="Timer.html">Timer</a></div>
+				<div class="class_entry"><a href="TimerManager.html">TimerManager</a></div>
+				<div class="class_entry"><a href="Vector2.html">Vector2</a></div>
+				<div class="class_entry"><a href="Vector3.html">Vector3</a></div>
+				<div class="class_entry"><a href="Vertex.html">Vertex</a></div>
+			</div>
+
+				<div class="class_main">
+					<div class="class_name">Mesh</div>
+					<div class="class_desc"> A polygonal mesh. The mesh is assembled from Polygon instances, which in turn contain Vertex instances. This structure is provided for convenience and when the mesh is rendered, it is cached into vertex arrays with no notions of separate polygons. When data in the mesh changes, arrayDirtyMap must be set to true for the appropriate array types (color, position, normal, etc). Available types are defined in RenderDataArray.</div>
+					<div class="class_desc">NOTE: Mesh instances are not automatically garbage collected.</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Static Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">Mesh.QUAD_MESH <span class="static_value">= 0</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Quad based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.TRI_MESH <span class="static_value">= 1</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Triangle based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.TRIFAN_MESH <span class="static_value">= 2</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Triangle fan based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.LINE_MESH <span class="static_value">= 4</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Line based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.POINT_MESH <span class="static_value">= 5</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Point based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.LINE_STRIP_MESH <span class="static_value">= 6</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Line strip based mesh.</div>
+							</div>
+							<div class="class_property">
+								<div class="class_property_name">Mesh.LINE_LOOP_MESH <span class="static_value">= 7</span></div>
+								<div class="class_property_type">Integer</div>
+								<div class="class_property_desc"> Line loop based mesh.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_properties">
+						<div class="class_properties_title">Properties</div>
+						<div class="class_properties_list">
+							<div class="class_property">
+								<div class="class_property_name">useVertexColors</div>
+								<div class="class_property_type">Boolean</div>
+								<div class="class_property_desc"> If set to true, the renderer will use the vertex colors instead of entity color transform to render this mesh.</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Static Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Mesh.MeshFromFileName ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">Mesh</div>
+								<div class="class_method_desc"> Construct from a mesh loaded from a file. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to mesh file.</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="class_methods">
+						<div class="class_methods_title">Functions</div>
+						<div class="class_methods_list">
+							<div class="class_method">
+								<div class="class_method_name">Mesh ( <span class="inline_type">Integer</span> <span class="inline_param">meshType</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Construct with an empty mesh of specified type. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">meshType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Type of mesh. Possible values are: Mesh.QUAD_MESH, Mesh.TRI_MESH, Mesh.TRIFAN_MESH, Mesh.TRISTRIP_MESH, Mesh.LINE_MESH, Mesh.POINT_MESH.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">addPolygon ( <span class="inline_type">Polygon</span> <span class="inline_param">newPolygon</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Adds a polygon to the mesh. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newPolygon</div>
+									<div class="class_method_param_type">Polygon</div>
+									<div class="class_method_param_desc">Polygon to add.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">loadMesh ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Loads a mesh from a file. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to mesh file.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">clearMesh () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Clears mesh data.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">saveToFile ( <span class="inline_type">String</span> <span class="inline_param">fileName</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Saves mesh to a file. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">fileName</div>
+									<div class="class_method_param_type">String</div>
+									<div class="class_method_param_desc">Path to file to save to.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">loadFromFile ( <span class="inline_type">OSFILE</span> <span class="inline_param">inFile</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">inFile</div>
+									<div class="class_method_param_type">OSFILE</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPolygonCount () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the number of polygons in the mesh. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVertexCount () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the total vertex count in the mesh. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getPolygon ( <span class="inline_type">Integer</span> <span class="inline_param">index</span> ) </div>
+								<div class="class_method_type">Polygon</div>
+								<div class="class_method_desc"> Returns a polygon at specified index. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">index</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Index of polygon.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createPlane ( <span class="inline_type">Number</span> <span class="inline_param">w</span> ,  <span class="inline_type">Number</span> <span class="inline_param">h</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a plane mesh of specified size. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Width of plane.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Depth of plane.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createVPlane ( <span class="inline_type">Number</span> <span class="inline_param">w</span> ,  <span class="inline_type">Number</span> <span class="inline_param">h</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a vertical plane mesh of specified size. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Width of plane.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Depth of plane.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createTorus ( <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Number</span> <span class="inline_param">tubeRadius</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">rSegments</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">tSegments</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a torus. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radius of the torus.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">tubeRadius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radious of the tube.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">rSegments</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of radial segments.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">tSegments</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of tube segments.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createBox ( <span class="inline_type">Number</span> <span class="inline_param">w</span> ,  <span class="inline_type">Number</span> <span class="inline_param">d</span> ,  <span class="inline_type">Number</span> <span class="inline_param">h</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a cube mesh of specified size. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">w</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Width of cube.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">d</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Depth of cube.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">h</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Height of cube.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createSphere ( <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">numRings</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">numSegments</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a sphere mesh of specified size. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radius of sphere.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">numRings</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of rings.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">numSegments</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of segments.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createCylinder ( <span class="inline_type">Number</span> <span class="inline_param">height</span> ,  <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">numSegments</span> ,  <span class="inline_type">Boolean</span> <span class="inline_param">capped</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a cylinder mesh. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Height of the cylinder.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radius of the cylinder.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">numSegments</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of segments.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">capped</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">Create the end caps.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">createCone ( <span class="inline_type">Number</span> <span class="inline_param">height</span> ,  <span class="inline_type">Number</span> <span class="inline_param">radius</span> ,  <span class="inline_type">Integer</span> <span class="inline_param">numSegments</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Creates a cone mesh. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">height</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Height of the cone.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">radius</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">Radius of the cone.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">numSegments</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">Number of segments.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">recenterMesh () </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc"> Recenters the mesh with all vertices being as equidistant from origin as possible.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">useVertexNormals ( <span class="inline_type">Boolean</span> <span class="inline_param">val</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Toggles the mesh between  </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">val</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If true, the mesh will use vertex normals, otherwise it will use the polygon normals.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setVertexBuffer ( <span class="inline_type">VertexBuffer</span> <span class="inline_param">buffer</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets the vertex buffer for the mesh. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">buffer</div>
+									<div class="class_method_param_type">VertexBuffer</div>
+									<div class="class_method_param_desc">New vertex buffer for mesh.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getVertexBuffer () </div>
+								<div class="class_method_type">VertexBuffer</div>
+								<div class="class_method_desc"> Returns the vertex buffer for the mesh. </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getRadius () </div>
+								<div class="class_method_type">Number</div>
+								<div class="class_method_desc"> Returns the radius of the mesh (furthest vertex away from origin). </div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">calculateNormals ( <span class="inline_type">Boolean</span> <span class="inline_param">smooth</span> ,  <span class="inline_type">Number</span> <span class="inline_param">smoothAngle</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Recalculates the mesh normals </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">smooth</div>
+									<div class="class_method_param_type">Boolean</div>
+									<div class="class_method_param_desc">If true, will use smooth normals.</div>
+								</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">smoothAngle</div>
+									<div class="class_method_param_type">Number</div>
+									<div class="class_method_param_desc">If smooth, this parameter sets the angle tolerance for the approximation function.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">calculateTangents () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Recalculates the tangent space vector for all vertices.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getConnectedFaces ( <span class="inline_type">Vertex</span> <span class="inline_param">v</span> ) </div>
+								<div class="class_method_type">Polygon</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">v</div>
+									<div class="class_method_param_type">Vertex</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">getMeshType () </div>
+								<div class="class_method_type">Integer</div>
+								<div class="class_method_desc"> Returns the mesh type.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">setMeshType ( <span class="inline_type">Integer</span> <span class="inline_param">newType</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc"> Sets a new mesh type. </div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">newType</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">New mesh type. Possible values are: Mesh.QUAD_MESH, Mesh.TRI_MESH, Mesh.TRIFAN_MESH, Mesh.TRISTRIP_MESH, Mesh.LINE_MESH, Mesh.POINT_MESH.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">dirtyArray ( <span class="inline_type">Integer</span> <span class="inline_param">arrayIndex</span> ) </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+								<div class="class_method_params">
+								<div class="class_method_params_title">Parameters</div>
+								<div class="class_method_param">
+									<div class="class_method_param_name">arrayIndex</div>
+									<div class="class_method_param_type">Integer</div>
+									<div class="class_method_param_desc">No description.</div>
+								</div>
+								</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">dirtyArrays () </div>
+								<div class="class_method_type">nil</div>
+								<div class="class_method_desc">No description.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">calculateBBox () </div>
+								<div class="class_method_type">Vector3</div>
+								<div class="class_method_desc"> Calculates the mesh bounding box.</div>
+							</div>
+							<div class="class_method">
+								<div class="class_method_name">hasVertexBuffer () </div>
+								<div class="class_method_type">Boolean</div>
+								<div class="class_method_desc"> Checks if the mesh has a vertex buffer. </div>
+							</div>
+						</div>
+					</div>
+				</div>

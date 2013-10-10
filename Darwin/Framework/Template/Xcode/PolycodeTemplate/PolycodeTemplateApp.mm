@@ -330,7 +330,7 @@ bool PolycodeTemplateApp::Update() {
         Number dist = xs + ys + zs; // Find the distance between the car and the camera
         
         if (engineForce < 0.0) {
-            if (steeringValue < 0.0) {// camera adjustment for forward direction
+            if (steeringValue < 0.0) {// camera adjustment for reverse direction
                 Vector3 turnL = Vector3(-0.001, 0.0, 0.0);
                 turnL = cam->getConcatenatedMatrix().rotateVector(turnL);
                 pCam = pCam + (turnL * dist);
@@ -343,7 +343,7 @@ bool PolycodeTemplateApp::Update() {
             }
         }
         if (engineForce > 0.0) {
-            if (steeringValue < 0.0) {// reverse camera adjustment for reverse direction
+            if (steeringValue < 0.0) {// camera adjustment for forwards direction
                 Vector3 turnL = Vector3(0.001, 0.0, 0.0);
                 turnL = cam->getConcatenatedMatrix().rotateVector(turnL);
                 pCam = pCam + (turnL * dist);
@@ -366,7 +366,7 @@ bool PolycodeTemplateApp::Update() {
         cam->setPosition(pCam);
     }
     
-    vehicleTracker->setPosition(vehicle->getPosition());// set position of vehicle tracker, which the camera is a child of. Keeps the camera at the right distance to the vehicle. 
+    vehicleTracker->setPosition(vehicle->getPosition());// set position of vehicle tracker, which the camera is a child of. Keeps the camera at the right distance to the vehicle.
     
     
     // use a quat etc to keep the camera centered on the vehicle

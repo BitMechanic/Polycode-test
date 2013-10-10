@@ -2,6 +2,8 @@
 // Polycode template. Write your code here.
 // 
 
+#include <iostream>
+#include <math.h>
 #include "PolycodeTemplateApp.h"
 #define moveSpeed 01.00
 
@@ -112,6 +114,8 @@ PolycodeTemplateApp::PolycodeTemplateApp(PolycodeView *view) : EventHandler() {
     vehicleTracker = new ScenePrimitive(ScenePrimitive::TYPE_BOX, 0.5, 0.25, 1.0);
     vehicleTracker->setPosition(6,1,5);
     vehicleTracker->addChild(scene->getDefaultCamera());
+    
+   
     
     
 	
@@ -317,14 +321,52 @@ bool PolycodeTemplateApp::Update() {
 		testBox->setColor(0.0,1.0,1.0,0.5);
 	}
     
-    if(cameraEvent) {// If true then change camera position relative to the vehicle, in the direction of the key press
-        Vector3 dirVector = cameraMove;
-        dirVector = scene->getDefaultCamera()->getConcatenatedMatrix().rotateVector(dirVector);
-        Vector3 newPosition = scene->getDefaultCamera()->getPosition() + (dirVector * moveSpeed);
-        scene->getDefaultCamera()->setPosition(newPosition);
+    if (!steeringValue == 0.0) {// Move the camera to compensate for yaw of the vehicle when turning, not supposed to keep the camera precisely behind the vehicle, player can use wasd keys to make further compensations
+        Vector3 camPos = cam->getPosition();
+        Vector3 carPos = vehicle->getPosition();
+        Number xs = (camPos.x - carPos.x) * (camPos.x - carPos.x);
+        Number ys = (camPos.y - carPos.y) * (camPos.y - carPos.y);
+        Number zs = (camPos.z - carPos.z) * (camPos.z - carPos.z);
+        Number dist = xs + ys + zs; // Find the distance between the car and the camera
+        
+        if (engineForce < 0.0) {
+            if (steeringValue < 0.0) {// camera adjustment for forward direction
+                Vector3 turnL = Vector3(-0.001, 0.0, 0.0);
+                turnL = cam->getConcatenatedMatrix().rotateVector(turnL);
+                pCam = pCam + (turnL * dist);
+                cam->setPosition(pCam);// adjust the camera so that it stays roughly behind the vehicle.
+            } else {
+                Vector3 turnR = Vector3(0.001, 0.0, 0.0);
+                turnR = cam->getConcatenatedMatrix().rotateVector(turnR);
+                pCam = pCam + (turnR * dist);
+                cam->setPosition(pCam);
+            }
+        }
+        if (engineForce > 0.0) {
+            if (steeringValue < 0.0) {// reverse camera adjustment for reverse direction
+                Vector3 turnL = Vector3(0.001, 0.0, 0.0);
+                turnL = cam->getConcatenatedMatrix().rotateVector(turnL);
+                pCam = pCam + (turnL * dist);
+                cam->setPosition(pCam);
+            } else {
+                Vector3 turnR = Vector3(-0.001, 0.0, 0.0);
+                turnR = cam->getConcatenatedMatrix().rotateVector(turnR);
+                pCam = pCam + (turnR * dist);
+                cam->setPosition(pCam);
+            }
+        }
     }
     
-    vehicleTracker->setPosition(vehicle->getPosition());// set position of vehicle tracker
+    
+    
+    if(cameraEvent) {// If true then change camera position relative to the vehicle, in the direction of the key press
+        Vector3 dirVector = cameraMove;
+        dirVector = cam->getConcatenatedMatrix().rotateVector(dirVector);
+        pCam = pCam + (dirVector * moveSpeed);
+        cam->setPosition(pCam);
+    }
+    
+    vehicleTracker->setPosition(vehicle->getPosition());// set position of vehicle tracker, which the camera is a child of. Keeps the camera at the right distance to the vehicle. 
     
     
     // use a quat etc to keep the camera centered on the vehicle
